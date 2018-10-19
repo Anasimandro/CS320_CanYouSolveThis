@@ -1,5 +1,5 @@
 # CS320_CanYouSolveThis
-Repository for the CS 320 Project "Conquest for Coffee"
+Repository for the CS 320 Project "Can You Solve This?"
 ***
 This software program is a single player trivia game. 
 The game will consist of a simple visual environment including a GUI for the players to answer the questions.
