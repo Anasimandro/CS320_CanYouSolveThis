@@ -16,6 +16,9 @@ public class StartScreen {
         JButton startButton = new JButton();
         JButton exitButton = new JButton();
 
+        //   startButton.addActionListener(StartScreenListener);
+        // exitButton.addActionListener(StartScreenListener);
+
 
         startButton.setText("Start");
         startButton.setFont(new Font("Arial", Font.PLAIN, 30));
