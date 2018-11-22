@@ -18,7 +18,7 @@ public class CategorySelection {
 
         JButton celebrities = new JButton();
         JButton movies = new JButton();
-        JButton generalculture = new JButton();
+        JButton history = new JButton();
         JButton music = new JButton();
         JButton food = new JButton();
 
@@ -34,11 +34,11 @@ public class CategorySelection {
         movies.setLocation(500, 370);
         movies.setBackground(Color.BLUE);
 
-        generalculture.setText("General Culture");
-        generalculture.setFont(new Font("Arial", Font.PLAIN, 20));
-        generalculture.setSize(300, 80);
-        generalculture.setLocation(500, 440);
-        generalculture.setBackground(Color.GREEN);
+        history.setText("History");
+        history.setFont(new Font("Arial", Font.PLAIN, 20));
+        history.setSize(300, 80);
+        history.setLocation(500, 440);
+        history.setBackground(Color.GREEN);
 
 
         music.setText("Music");
@@ -59,7 +59,7 @@ public class CategorySelection {
 
         panel.add(celebrities);
         panel.add(movies);
-        panel.add(generalculture);
+        panel.add(history);
         panel.add(music);
         panel.add(food);
 
