@@ -6,12 +6,12 @@ public class StartScreen {
     private JPanel panel;
     public StartScreen() {
         panel = new JPanel();
-        panel.setLayout(new GridLayout(4,0));
+        panel.setLayout(new GridLayout(4,3,20,20));
 
 
         JLabel label = new JLabel("Welcome to our mini game Can You Solve This");
         label.setFont(new Font("Serif", Font.PLAIN, 30));
-        JLabel labelempty = new JLabel();
+        JLabel labelempty = new JLabel(" ");
 
 
 
@@ -25,7 +25,7 @@ public class StartScreen {
 
 
         panel.add(label);
-        panel.add(labelempty);
+       panel.add(labelempty);
 
         panel.add(startButton);
         panel.add(exitButton);
