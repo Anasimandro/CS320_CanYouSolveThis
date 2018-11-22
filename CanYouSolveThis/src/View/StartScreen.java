@@ -18,9 +18,12 @@ public class StartScreen {
 
 
         startButton.setText("Start");
+        startButton.setFont(new Font("Arial", Font.PLAIN, 30));
         startButton.setSize(400,80);
         startButton.setLocation(400, 300);
+
         exitButton.setText("Exit");
+        exitButton.setFont(new Font("Arial", Font.PLAIN, 30));
         exitButton.setSize(400,80);
         exitButton.setLocation(400,400);
 
