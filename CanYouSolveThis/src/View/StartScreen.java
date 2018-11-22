@@ -8,22 +8,13 @@ public class StartScreen {
         panel = new JPanel();
         panel.setLayout(null);
 
-
-
         JLabel label = new JLabel("Can You Solve This");
         label.setSize(600,60);
         label.setLocation(400,70);
         label.setFont(new Font("Serif", Font.PLAIN, 50));
 
-
-
-
-
-
         JButton startButton = new JButton();
         JButton exitButton = new JButton();
-
-
 
 
         startButton.setText("Start");
