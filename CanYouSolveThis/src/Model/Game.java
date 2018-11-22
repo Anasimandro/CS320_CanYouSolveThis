@@ -1,4 +1,5 @@
 package Model;
+
 import java.util.*;
 
 public class Game {
@@ -29,10 +30,10 @@ public class Game {
         //TODO
         //Shows the current question
         /*
-        * for(currentQuestion;currentQuestion < ...;currentQuestion++)
-        * print question i
-        *
-        * */
+         * for(currentQuestion;currentQuestion < ...;currentQuestion++)
+         * print question i
+         *
+         * */
     }
 
     private void endGame() {
