@@ -4,7 +4,7 @@ import View.*;
 
 import java.awt.*;
 
-public class main {
+public class Main {
 
     public static void main(String[]args){
         JFrame frame = new JFrame("Can You Solve This");
@@ -19,5 +19,8 @@ public class main {
 
         startPanel.setVisible(true);
         frame.setVisible(true);
+    }
+    private void startNewGame() {
+        //TODO
     }
 }
