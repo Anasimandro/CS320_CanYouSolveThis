@@ -6,7 +6,7 @@ public class StartScreen {
     private JPanel panel;
     public StartScreen() {
         panel = new JPanel();
-        panel.setLayout(new GridLayout(4,3));
+        panel.setLayout(new GridLayout(4,0));
 
 
         JLabel label = new JLabel("Welcome to our mini game Can You Solve This");
