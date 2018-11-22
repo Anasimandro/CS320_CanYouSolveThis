@@ -25,32 +25,32 @@ public class CategorySelection {
         celebrities.setText("Celebrities");
         celebrities.setFont(new Font("Arial", Font.PLAIN, 20));
         celebrities.setSize(300, 50);
-        celebrities.setLocation(500, 300);
+        celebrities.setLocation(450, 180);
         celebrities.setBackground(Color.RED);
 
         movies.setText("Movies");
         movies.setFont(new Font("Arial", Font.PLAIN, 20));
-        movies.setSize(300, 80);
-        movies.setLocation(500, 370);
+        movies.setSize(300, 50);
+        movies.setLocation(450, 250);
         movies.setBackground(Color.BLUE);
 
         history.setText("History");
         history.setFont(new Font("Arial", Font.PLAIN, 20));
-        history.setSize(300, 80);
-        history.setLocation(500, 440);
+        history.setSize(300, 50);
+        history.setLocation(450, 320);
         history.setBackground(Color.GREEN);
 
 
         music.setText("Music");
         music.setFont(new Font("Arial", Font.PLAIN, 20));
-        music.setSize(300, 80);
-        music.setLocation(500, 510);
+        music.setSize(300, 50);
+        music.setLocation(450, 390);
         music.setBackground(Color.YELLOW);
 
         food.setText("Food");
         food.setFont(new Font("Arial", Font.PLAIN, 20));
-        food.setSize(300, 80);
-        food.setLocation(500, 580);
+        food.setSize(300, 50);
+        food.setLocation(450, 460);
         food.setBackground(Color.ORANGE);
 
 
