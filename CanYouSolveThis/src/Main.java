@@ -16,7 +16,6 @@ public class Main {
         JPanel startPanel = startScreen.getPanel();
 
         frame.add(startPanel);
-        frame.add(startPanel);
 
         startPanel.setVisible(true);
         frame.setVisible(true);
