@@ -26,26 +26,32 @@ public class CategorySelection {
         celebrities.setFont(new Font("Arial", Font.PLAIN, 20));
         celebrities.setSize(300, 50);
         celebrities.setLocation(500, 300);
+        celebrities.setBackground(Color.RED);
 
         movies.setText("Movies");
         movies.setFont(new Font("Arial", Font.PLAIN, 20));
         movies.setSize(300, 80);
         movies.setLocation(500, 370);
+        movies.setBackground(Color.BLUE);
 
-        movies.setText("General Culture");
-        movies.setFont(new Font("Arial", Font.PLAIN, 20));
-        movies.setSize(300, 80);
-        movies.setLocation(500, 440);
+        generalculture.setText("General Culture");
+        generalculture.setFont(new Font("Arial", Font.PLAIN, 20));
+        generalculture.setSize(300, 80);
+        generalculture.setLocation(500, 440);
+        generalculture.setBackground(Color.GREEN);
 
-        movies.setText("Music");
-        movies.setFont(new Font("Arial", Font.PLAIN, 20));
-        movies.setSize(300, 80);
-        movies.setLocation(500, 510);
 
-        movies.setText("Food");
-        movies.setFont(new Font("Arial", Font.PLAIN, 20));
-        movies.setSize(300, 80);
-        movies.setLocation(500, 580);
+        music.setText("Music");
+        music.setFont(new Font("Arial", Font.PLAIN, 20));
+        music.setSize(300, 80);
+        music.setLocation(500, 510);
+        music.setBackground(Color.YELLOW);
+
+        food.setText("Food");
+        food.setFont(new Font("Arial", Font.PLAIN, 20));
+        food.setSize(300, 80);
+        food.setLocation(500, 580);
+        food.setBackground(Color.ORANGE);
 
 
         panel.add(label);
