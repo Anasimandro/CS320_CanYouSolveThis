@@ -14,6 +14,7 @@ public class StartScreen {
         label.setFont(new Font("Serif", Font.PLAIN, 50));
 
         JButton startButton = new JButton();
+        JButton previousScores = new JButton();
         JButton exitButton = new JButton();
 
         //   startButton.addActionListener(StartScreenListener);
@@ -23,7 +24,12 @@ public class StartScreen {
         startButton.setText("Start");
         startButton.setFont(new Font("Arial", Font.PLAIN, 30));
         startButton.setSize(400,80);
-        startButton.setLocation(400, 300);
+        startButton.setLocation(400, 200);
+
+        previousScores.setText("Previous Scores");
+        previousScores.setFont(new Font("Arial", Font.PLAIN, 30));
+        previousScores.setSize(400, 80);
+        previousScores.setLocation(400, 300);
 
         exitButton.setText("Exit");
         exitButton.setFont(new Font("Arial", Font.PLAIN, 30));
@@ -36,6 +42,7 @@ public class StartScreen {
 
 
         panel.add(startButton);
+        panel.add(previousScores);
         panel.add(exitButton);
 
 
