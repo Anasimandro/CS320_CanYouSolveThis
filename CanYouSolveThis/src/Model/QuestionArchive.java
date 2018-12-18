@@ -1,6 +1,16 @@
+// get10Random...Questions returns
+// 10x5 array
+// x,0 question
+// x,1 correct answers
+// x,2 ; x,3 ; x,4 wrong answers
+
 package Model;
 
 import java.util.*;
+
+enum Category {
+    CELEBRITIES, FOOD, HISTORY, MOVIES, MUSIC;
+}
 
 public class QuestionArchive {
 
@@ -9,8 +19,81 @@ public class QuestionArchive {
     private String[][] historyQuestions;
     private String[][] movieQuestions;
     private String[][] musicQuestions;
+    Category category;
 
     public QuestionArchive() {
+
+    }
+
+    private String[][] get10RandomCelebrityQuestions() {
+        String[][] finalCelebrityQuestions = new String[10][5];
+        Random questionNumber = new Random();
+
+        for(int i = 0 ; i < 10 ; i++) {
+            int next = questionNumber.nextInt(25);
+            for(int j = 0 ; j < 5 ; j++) {
+                finalCelebrityQuestions[i][j] = celebrityQuestions[next][j];
+            }
+        }
+
+        return finalCelebrityQuestions;
+    }
+
+    private String[][] get10RandomFoodQuestions() {
+        String[][] finalFoodQuestions = new String[10][5];
+        Random questionNumber = new Random();
+
+        for(int i = 0 ; i < 10 ; i++) {
+            int next = questionNumber.nextInt(25);
+            for(int j = 0 ; j < 5 ; j++) {
+                finalFoodQuestions[i][j] = foodQuestions[next][j];
+            }
+        }
+
+        return finalFoodQuestions;
+    }
+
+    private String[][] get10RandomHistoryQuestions() {
+        String[][] finalHistoryQuestions = new String[10][5];
+        Random questionNumber = new Random();
+
+        for (int i = 0; i < 10; i++) {
+            int next = questionNumber.nextInt(25);
+            for (int j = 0; j < 5; j++) {
+                finalHistoryQuestions[i][j] = historyQuestions[next][j];
+            }
+        }
+
+        return finalHistoryQuestions;
+    }
+
+    private String[][] get10RandomMovieQuestions() {
+        String[][] finalMovieQuestions = new String[10][5];
+        Random questionNumber = new Random();
+
+        for (int i = 0; i < 10; i++) {
+            int next = questionNumber.nextInt(25);
+            for (int j = 0; j < 5; j++) {
+                finalMovieQuestions[i][j] = movieQuestions[next][j];
+            }
+        }
+
+        return finalMovieQuestions;
+
+    }
+
+    private String[][] get10RandomMusicQuestions() {
+        String[][] finalMusicQuestions = new String[10][5];
+        Random questionNumber = new Random();
+
+        for (int i = 0; i < 10; i++) {
+            int next = questionNumber.nextInt(25);
+            for (int j = 0; j < 5; j++) {
+                finalMusicQuestions[i][j] = musicQuestions[next][j];
+            }
+        }
+
+        return finalMusicQuestions;
 
     }
 
@@ -18,12 +101,12 @@ public class QuestionArchive {
         celebrityQuestions = new String[25][5];
 
         //Question 1 & Answers
-        celebrityQuestions[0][0] = "Which of the following terms describes a vegetarian who does not eat eggs but does eat dairy products?";
+        celebrityQuestions[0][0] =
 
-        celebrityQuestions[0][1] = "Lacto-Ovo";
-        celebrityQuestions[0][2] = "Ovo";
-        celebrityQuestions[0][3] = "Paleo";
-        celebrityQuestions[0][4] = "Vegan";
+        celebrityQuestions[0][1] =
+        celebrityQuestions[0][2] =
+        celebrityQuestions[0][3] =
+        celebrityQuestions[0][4] =
 
         //Question 2 & Answers
         celebrityQuestions[1][0] = "";
@@ -232,210 +315,210 @@ public class QuestionArchive {
         foodQuestions[0][4] = "Vegan";
 
         //Question 2 & Answers
-        foodQuestions[1][0] = "";
+        foodQuestions[1][0] = "Black pepper, plum and blackberry flavors describe which wine?";
 
-        foodQuestions[1][1] = "";
-        foodQuestions[1][2] = "";
-        foodQuestions[1][3] = "";
-        foodQuestions[1][4] = "";
+        foodQuestions[1][1] = "Shiraz";
+        foodQuestions[1][2] = "Merlot";
+        foodQuestions[1][3] = "Beaujolais";
+        foodQuestions[1][4] = "Pinot Grigio";
 
         //Question 3 & Answers
-        foodQuestions[2][0] = "";
+        foodQuestions[2][0] = "What country is renowned for chocolate?";
 
-        foodQuestions[2][1] = "";
-        foodQuestions[2][2] = "";
-        foodQuestions[2][3] = "";
-        foodQuestions[2][4] = "";
+        foodQuestions[2][1] = "Belgium";
+        foodQuestions[2][2] = "Finland";
+        foodQuestions[2][3] = "Venezuela";
+        foodQuestions[2][4] = "Argentina";
 
         //Question 4 & Answers
-        foodQuestions[3][0] = "";
+        foodQuestions[3][0] = "In what country might you eat haggis?";
 
-        foodQuestions[3][1] = "";
-        foodQuestions[3][2] = "";
-        foodQuestions[3][3] = "";
-        foodQuestions[3][4] = "";
+        foodQuestions[3][1] = "Scotland";
+        foodQuestions[3][2] = "Paraguay";
+        foodQuestions[3][3] = "Norway";
+        foodQuestions[3][4] = "Lesotho";
 
         //Question 5 & Answers
-        foodQuestions[4][0] = "";
+        foodQuestions[4][0] = "If a wine is described as 'hot' it most likely means it?";
 
-        foodQuestions[4][1] = "";
-        foodQuestions[4][2] = "";
-        foodQuestions[4][3] = "";
-        foodQuestions[4][4] = "";
+        foodQuestions[4][1] = "Has too high an alcohol content.";
+        foodQuestions[4][2] = "Is spicy flavored.";
+        foodQuestions[4][3] = "Is served at warmer than room temperature.";
+        foodQuestions[4][4] = "Is bitter.";
 
         //Question 6 & Answers
-        foodQuestions[5][0] = "";
+        foodQuestions[5][0] = "If you were eating mole poblano, you would most likely be in what country?";
 
-        foodQuestions[5][1] = "";
-        foodQuestions[5][2] = "";
-        foodQuestions[5][3] = "";
-        foodQuestions[5][4] = "";
+        foodQuestions[5][1] = "Mexico";
+        foodQuestions[5][2] = "China";
+        foodQuestions[5][3] = "Italy";
+        foodQuestions[5][4] = "Tanzania";
 
         //Question 7 & Answers
-        foodQuestions[6][0] = "";
+        foodQuestions[6][0] = "In what country would you be most likely to find gruyere cheese in the market?";
 
-        foodQuestions[6][1] = "";
-        foodQuestions[6][2] = "";
-        foodQuestions[6][3] = "";
-        foodQuestions[6][4] = "";
+        foodQuestions[6][1] = "Switzerland";
+        foodQuestions[6][2] = "Spain";
+        foodQuestions[6][3] = "Suriname";
+        foodQuestions[6][4] = "Sweden";
 
         //Question 8 & Answers
-        foodQuestions[7][0] = "";
+        foodQuestions[7][0] = "Which of these countries is not a major producer of oranges?";
 
-        foodQuestions[7][1] = "";
-        foodQuestions[7][2] = "";
-        foodQuestions[7][3] = "";
-        foodQuestions[7][4] = "";
+        foodQuestions[7][1] = "Iceland";
+        foodQuestions[7][2] = "Italy";
+        foodQuestions[7][3] = "Brazil";
+        foodQuestions[7][4] = "USA";
 
         //Question 9 & Answers
-        foodQuestions[8][0] = "";
+        foodQuestions[8][0] = "Which Italian region in this list is home to Prosecco production?";
 
-        foodQuestions[8][1] = "";
-        foodQuestions[8][2] = "";
-        foodQuestions[8][3] = "";
-        foodQuestions[8][4] = "";
+        foodQuestions[8][1] = "Veneto";
+        foodQuestions[8][2] = "Sicily";
+        foodQuestions[8][3] = "Tuscany";
+        foodQuestions[8][4] = "Alto Adige";
 
         //Question 10 & Answers
-        foodQuestions[9][0] = "";
+        foodQuestions[9][0] = "Where would you find empanadas being made?";
 
-        foodQuestions[9][1] = "";
-        foodQuestions[9][2] = "";
-        foodQuestions[9][3] = "";
-        foodQuestions[9][4] = "";
+        foodQuestions[9][1] = "Spain";
+        foodQuestions[9][2] = "Tanzania";
+        foodQuestions[9][3] = "Pakistan";
+        foodQuestions[9][4] = "Japan";
 
         //Question 11 & Answers
-        foodQuestions[10][0] = "";
+        foodQuestions[10][0] = "In which country did the fortune cookie originate?";
 
-        foodQuestions[10][1] = "";
-        foodQuestions[10][2] = "";
-        foodQuestions[10][3] = "";
-        foodQuestions[10][4] = "";
+        foodQuestions[10][1] = "USA";
+        foodQuestions[10][2] = "China";
+        foodQuestions[10][3] = "Taiwan";
+        foodQuestions[10][4] = "Japan";
 
         //Question 12 & Answers
-        foodQuestions[11][0] = "";
+        foodQuestions[11][0] = "Which of the following refers not only to a dish but also to the pot it is cooked in?";
 
-        foodQuestions[11][1] = "";
-        foodQuestions[11][2] = "";
-        foodQuestions[11][3] = "";
-        foodQuestions[11][4] = "";
+        foodQuestions[11][1] = "Tagine";
+        foodQuestions[11][2] = "Poutine";
+        foodQuestions[11][3] = "Smorgasboard";
+        foodQuestions[11][4] = "Goulash";
 
         //Question 13 & Answers
-        foodQuestions[12][0] = "";
+        foodQuestions[12][0] = "What item is on the table at every Ethiopian meal?";
 
-        foodQuestions[12][1] = "";
-        foodQuestions[12][2] = "";
-        foodQuestions[12][3] = "";
-        foodQuestions[12][4] = "";
+        foodQuestions[12][1] = "Injera Bread";
+        foodQuestions[12][2] = "Curried Chickpeas";
+        foodQuestions[12][3] = "Steamed Rice";
+        foodQuestions[12][4] = "Pasta";
 
         //Question 14 & Answers
-        foodQuestions[13][0] = "";
+        foodQuestions[13][0] = "The world's most expensive spice is native to Southwest Asia. What is it?";
 
-        foodQuestions[13][1] = "";
-        foodQuestions[13][2] = "";
-        foodQuestions[13][3] = "";
-        foodQuestions[13][4] = "";
+        foodQuestions[13][1] = "Saffron";
+        foodQuestions[13][2] = "Cinnamon";
+        foodQuestions[13][3] = "Vanilla";
+        foodQuestions[13][4] = "Star Anise";
 
         //Question 15 & Answers
-        foodQuestions[14][0] = "";
+        foodQuestions[14][0] = "In order to eat a German weisswurst, or white sausage, like a real Münchner, you must do which of the following?";
 
-        foodQuestions[14][1] = "";
-        foodQuestions[14][2] = "";
-        foodQuestions[14][3] = "";
-        foodQuestions[14][4] = "";
+        foodQuestions[14][1] = "Suck the sausage out of its casing.";
+        foodQuestions[14][2] = "Dunk it in beer.";
+        foodQuestions[14][3] = "Eat it on a roll.";
+        foodQuestions[14][4] = "Cut it into small pieces.";
 
         //Question 16 & Answers
-        foodQuestions[15][0] = "";
+        foodQuestions[15][0] = "The world's largest fish market is in what capital city?";
 
-        foodQuestions[15][1] = "";
-        foodQuestions[15][2] = "";
-        foodQuestions[15][3] = "";
-        foodQuestions[15][4] = "";
+        foodQuestions[15][1] = "Tokyo";
+        foodQuestions[15][2] = "Beijing";
+        foodQuestions[15][3] = "Mexico City";
+        foodQuestions[15][4] = "Canberra";
 
         //Question 17 & Answers
-        foodQuestions[16][0] = "";
+        foodQuestions[16][0] = "What food is hummus made from?";
 
-        foodQuestions[16][1] = "";
-        foodQuestions[16][2] = "";
-        foodQuestions[16][3] = "";
-        foodQuestions[16][4] = "";
+        foodQuestions[16][1] = "Chickpeas";
+        foodQuestions[16][2] = "Tofu";
+        foodQuestions[16][3] = "Corn";
+        foodQuestions[16][4] = "Rice";
 
         //Question 18 & Answers
-        foodQuestions[17][0] = "";
+        foodQuestions[17][0] = "What's in a Martini?";
 
-        foodQuestions[17][1] = "";
-        foodQuestions[17][2] = "";
-        foodQuestions[17][3] = "";
-        foodQuestions[17][4] = "";
+        foodQuestions[17][1] = "Vodka (or gin), vermouth, olive (or twist).";
+        foodQuestions[17][2] = "Bourbon and seltzer";
+        foodQuestions[17][3] = "Vodka, cranberry juice and a twist";
+        foodQuestions[17][4] = "Rum, cola, and a lemon";
 
         //Question 19 & Answers
-        foodQuestions[18][0] = "";
+        foodQuestions[18][0] = "How many different types of liquor are in a Long Island Iced Tea ?";
 
-        foodQuestions[18][1] = "";
-        foodQuestions[18][2] = "";
-        foodQuestions[18][3] = "";
-        foodQuestions[18][4] = "";
+        foodQuestions[18][1] = "5";
+        foodQuestions[18][2] = "7";
+        foodQuestions[18][3] = "3";
+        foodQuestions[18][4] = "4";
 
         //Question 20 & Answers
-        foodQuestions[19][0] = "";
+        foodQuestions[19][0] = "Which type of pasta's name means little worms?";
 
-        foodQuestions[19][1] = "";
-        foodQuestions[19][2] = "";
-        foodQuestions[19][3] = "";
-        foodQuestions[19][4] = "";
+        foodQuestions[19][1] = "Vermicelli";
+        foodQuestions[19][2] = "Spaghetti";
+        foodQuestions[19][3] = "Linguine";
+        foodQuestions[19][4] = "Fusilli";
 
         //Question 21 & Answers
-        foodQuestions[20][0] = "";
+        foodQuestions[20][0] = "Swiss chard is also known as...";
 
-        foodQuestions[20][1] = "";
-        foodQuestions[20][2] = "";
-        foodQuestions[20][3] = "";
-        foodQuestions[20][4] = "";
+        foodQuestions[20][1] = "Silverbeet";
+        foodQuestions[20][2] = "English spinach";
+        foodQuestions[20][3] = "Chicory";
+        foodQuestions[20][4] = "Sorrel";
 
         //Question 22 & Answers
-        foodQuestions[21][0] = "";
+        foodQuestions[21][0] = "Where do Kalamata Olives originate from?";
 
-        foodQuestions[21][1] = "";
-        foodQuestions[21][2] = "";
-        foodQuestions[21][3] = "";
-        foodQuestions[21][4] = "";
+        foodQuestions[21][1] = "Greece";
+        foodQuestions[21][2] = "Turkey";
+        foodQuestions[21][3] = "Italy";
+        foodQuestions[21][4] = "Spain";
 
         //Question 23 & Answers
-        foodQuestions[22][0] = "";
+        foodQuestions[22][0] = "Where is the red colouring from that is used to make cochineal?";
 
-        foodQuestions[22][1] = "";
-        foodQuestions[22][2] = "";
-        foodQuestions[22][3] = "";
-        foodQuestions[22][4] = "";
+        foodQuestions[22][1] = "Scale insects found in South America";
+        foodQuestions[22][2] = "Grasshoppers";
+        foodQuestions[22][3] = "Red ants";
+        foodQuestions[22][4] = "Dried and ground South American fruit";
 
         //Question 24 & Answers
-        foodQuestions[23][0] = "";
+        foodQuestions[23][0] = "What is usually the main ingredient of a cheesecake?";
 
-        foodQuestions[23][1] = "";
-        foodQuestions[23][2] = "";
-        foodQuestions[23][3] = "";
-        foodQuestions[23][4] = "";
+        foodQuestions[23][1] = "Cream Cheese";
+        foodQuestions[23][2] = "Fresh Cream";
+        foodQuestions[23][3] = "Limburger Cheese";
+        foodQuestions[23][4] = "Cake Mix";
 
         //Question 25 & Answers
-        foodQuestions[24][0] = "";
+        foodQuestions[24][0] = "What Mexican cheese is produced by pressing cottage cheese?";
 
-        foodQuestions[24][1] = "";
-        foodQuestions[24][2] = "";
-        foodQuestions[24][3] = "";
-        foodQuestions[24][4] = "";
+        foodQuestions[24][1] = "Queso Blanco";
+        foodQuestions[24][2] = "Oaxaca Cheese";
+        foodQuestions[24][3] = "Monterrey Jack";
+        foodQuestions[24][4] = "Queso Amarillo";
 
-        return null;
+        return foodQuestions;
     }
 
     private String[][] getHistoryQuestions() {
         historyQuestions = new String[25][5];
 
         //Question 1 & Answers
-        historyQuestions[0][0] = "Which of the following terms describes a vegetarian who does not eat eggs but does eat dairy products?";
+        historyQuestions[0][0] =
 
-        historyQuestions[0][1] = "Lacto-Ovo";
-        historyQuestions[0][2] = "Ovo";
-        historyQuestions[0][3] = "Paleo";
-        historyQuestions[0][4] = "Vegan";
+        historyQuestions[0][1] =
+        historyQuestions[0][2] =
+        historyQuestions[0][3] =
+        historyQuestions[0][4] =
 
         //Question 2 & Answers
         historyQuestions[1][0] = "";
@@ -635,12 +718,12 @@ public class QuestionArchive {
         movieQuestions = new String[25][5];
 
         //Question 1 & Answers
-        movieQuestions[0][0] = "Which of the following terms describes a vegetarian who does not eat eggs but does eat dairy products?";
+        movieQuestions[0][0] =
 
-        movieQuestions[0][1] = "Lacto-Ovo";
-        movieQuestions[0][2] = "Ovo";
-        movieQuestions[0][3] = "Paleo";
-        movieQuestions[0][4] = "Vegan";
+        movieQuestions[0][1] =
+        movieQuestions[0][2] =
+        movieQuestions[0][3] =
+        movieQuestions[0][4] =
 
         //Question 2 & Answers
         movieQuestions[1][0] = "";
@@ -841,12 +924,12 @@ public class QuestionArchive {
         musicQuestions = new String[25][5];
 
         //Question 1 & Answers
-        musicQuestions[0][0] = "Which of the following terms describes a vegetarian who does not eat eggs but does eat dairy products?";
+        musicQuestions[0][0] =
 
-        musicQuestions[0][1] = "Lacto-Ovo";
-        musicQuestions[0][2] = "Ovo";
-        musicQuestions[0][3] = "Paleo";
-        musicQuestions[0][4] = "Vegan";
+        musicQuestions[0][1] =
+        musicQuestions[0][2] =
+        musicQuestions[0][3] =
+        musicQuestions[0][4] =
 
         //Question 2 & Answers
         musicQuestions[1][0] = "";
