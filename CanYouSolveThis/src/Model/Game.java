@@ -6,6 +6,7 @@ public class Game {
 
     private int currentQuestionIndex;
     private Timer timer; //instantiate
+    Scanner scanner = new Scanner(System.in);
 
     public Game() {
 
@@ -13,16 +14,28 @@ public class Game {
 
 
     private void play() {
-        //showIdleScreen();
-        //selectCategory(enum);
+        showIdleScreen();
     }
 
     private void showIdleScreen() {
-       //TODO
+
+        System.out.println("type 1 for start 2 for exit");
+        int input = scanner.nextInt();
+        if (input == 1)
+            selectCategory();
+        else if(input == 2)
+            System.exit(1);
+        else
+            showIdleScreen();
+
+
     }
 
     private void selectCategory() {
         //TODO
+        System.out.println("1:celebrities, 2:food, 3:history, 4:movies");
+        String input = scanner.nextLine();
+
         //QuestionArchive
     }
 

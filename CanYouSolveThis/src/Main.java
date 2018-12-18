@@ -19,6 +19,7 @@ public class Main {
 
         startPanel.setVisible(true);
         frame.setVisible(true);
+
     }
     private void startNewGame() {
         //TODO
