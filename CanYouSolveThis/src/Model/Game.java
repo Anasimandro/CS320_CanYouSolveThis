@@ -33,8 +33,9 @@ public class Game {
 
     private void selectCategory() {
         //TODO
-        System.out.println("1:celebrities, 2:food, 3:history, 4:movies");
-        String input = scanner.nextLine();
+        System.out.println("1:celebrities, 2:food, 3:history, 4:movies, 5:music");
+        int input = scanner.nextInt();
+
 
         //QuestionArchive
     }
