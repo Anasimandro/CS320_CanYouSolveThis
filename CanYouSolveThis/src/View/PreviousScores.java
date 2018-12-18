@@ -15,7 +15,7 @@ public class PreviousScores {
                 "230<br/>" + "5000<br/>" + "2000</html>");
         label.setSize(600, 600);
         label.setLocation(40, 70);
-        label.setFont(new Font("Serif", Font.PLAIN, 20));
+        label.setBackground(Color.DARK_GRAY);
 
         panel.add(label);
     }
