@@ -12,7 +12,7 @@ public class Main {
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        StartScreen startScreen = new StartScreen();
+        StatusBar startScreen = new StatusBar();
         JPanel startPanel = startScreen.getPanel();
 
         frame.add(startPanel);
