@@ -723,87 +723,87 @@ public class QuestionArchive {
         movieQuestions[0][1] = "Wings";
         movieQuestions[0][2] = "The Circus";
         movieQuestions[0][3] = "All Quiet on the Western Front";
-        movieQuestions[0][4] = "Citizen Kane"
+        movieQuestions[0][4] = "Citizen Kane";
 
         //Question 2 & Answers
-        movieQuestions[1][0] = "";
+        movieQuestions[1][0] = "What classic horror movie features a serial killer in a William Shatner mask?";
 
-        movieQuestions[1][1] = "";
-        movieQuestions[1][2] = "";
-        movieQuestions[1][3] = "";
-        movieQuestions[1][4] = "";
+        movieQuestions[1][1] = "Halloween";
+        movieQuestions[1][2] = "The Fog";
+        movieQuestions[1][3] = "The 13th";
+        movieQuestions[1][4] = "Texas Chainsaw Massacre";
 
         //Question 3 & Answers
-        movieQuestions[2][0] = "";
+        movieQuestions[2][0] = "Who was the first Disney princess?";
 
-        movieQuestions[2][1] = "";
-        movieQuestions[2][2] = "";
-        movieQuestions[2][3] = "";
-        movieQuestions[2][4] = "";
+        movieQuestions[2][1] = "Persephone";
+        movieQuestions[2][2] = "Aurora";
+        movieQuestions[2][3] = "Snow White";
+        movieQuestions[2][4] = "Cinderella";
 
         //Question 4 & Answers
-        movieQuestions[3][0] = "";
+        movieQuestions[3][0] = "The Star Wars Holiday Special marked the first appearance of which Star Wars character?";
 
-        movieQuestions[3][1] = "";
-        movieQuestions[3][2] = "";
-        movieQuestions[3][3] = "";
-        movieQuestions[3][4] = "";
+        movieQuestions[3][1] = "Boba Fett";
+        movieQuestions[3][2] = "Jar Jar Binks";
+        movieQuestions[3][3] = "Lando Calrissian";
+        movieQuestions[3][4] = "Jabba the Hut";
 
         //Question 5 & Answers
-        movieQuestions[4][0] = "";
+        movieQuestions[4][0] = "In The Return of the King, who kills the Witch King?";
 
-        movieQuestions[4][1] = "";
-        movieQuestions[4][2] = "";
-        movieQuestions[4][3] = "";
-        movieQuestions[4][4] = "";
+        movieQuestions[4][1] = "Eowyn";
+        movieQuestions[4][2] = "Gandalf";
+        movieQuestions[4][3] = "Aragorn";
+        movieQuestions[4][4] = "Arwen";
 
         //Question 6 & Answers
-        movieQuestions[5][0] = "";
+        movieQuestions[5][0] = "What is the longest movie ever made?";
 
-        movieQuestions[5][1] = "";
-        movieQuestions[5][2] = "";
-        movieQuestions[5][3] = "";
-        movieQuestions[5][4] = "";
+        movieQuestions[5][1] = "The Cure for Insomnia";
+        movieQuestions[5][2] = "The Stand";
+        movieQuestions[5][3] = "Hamlet";
+        movieQuestions[5][4] = "Dances with the Wolves";
 
         //Question 7 & Answers
-        movieQuestions[6][0] = "";
+        movieQuestions[6][0] = "What was the first movie by Pixar to receive a rating higher than G in the United States?";
 
-        movieQuestions[6][1] = "";
-        movieQuestions[6][2] = "";
-        movieQuestions[6][3] = "";
-        movieQuestions[6][4] = "";
+        movieQuestions[6][1] = "The Incredibles";
+        movieQuestions[6][2] = "Finding Nemo";
+        movieQuestions[6][3] = "Monsters Inc.";
+        movieQuestions[6][4] = "Toy Story";
 
         //Question 8 & Answers
-        movieQuestions[7][0] = "";
+        movieQuestions[7][0] = "What film features a fight scene in which Bruce Lee breaks Jackie Chan's neck?";
 
-        movieQuestions[7][1] = "";
-        movieQuestions[7][2] = "";
-        movieQuestions[7][3] = "";
-        movieQuestions[7][4] = "";
+        movieQuestions[7][1] = "Enter the Dragon";
+        movieQuestions[7][2] = "Game of Death";
+        movieQuestions[7][3] = "The Big Brawl";
+        movieQuestions[7][4] = "South Park: Bigger, Longer & Uncut";
 
         //Question 9 & Answers
-        movieQuestions[8][0] = "";
+        movieQuestions[8][0] = "What was the first movie for which the cost of obtaining rights to the soundtrack outweighed all other production costs?";
 
-        movieQuestions[8][1] = "";
-        movieQuestions[8][2] = "";
-        movieQuestions[8][3] = "";
-        movieQuestions[8][4] = "";
+        movieQuestions[8][1] = "Clerks";
+        movieQuestions[8][2] = "Titanic";
+        movieQuestions[8][3] = "The Wall";
+        movieQuestions[8][4] = "The Blair Witch Project";
 
         //Question 10 & Answers
-        movieQuestions[9][0] = "";
+        movieQuestions[9][0] = "What is Boo's real name in Monster's Inc.?";
 
-        movieQuestions[9][1] = "";
-        movieQuestions[9][2] = "";
-        movieQuestions[9][3] = "";
-        movieQuestions[9][4] = "";
+        movieQuestions[9][1] = "Mary";
+        movieQuestions[9][2] = "Alice";
+        movieQuestions[9][3] = "Suzie";
+        movieQuestions[9][4] = "Ashley";
 
         //Question 11 & Answers
-        movieQuestions[10][0] = "";
+        movieQuestions[10][0] = "What was the last film personally overseen by Walt Disney?";
 
-        movieQuestions[10][1] = "";
-        movieQuestions[10][2] = "";
-        movieQuestions[10][3] = "";
-        movieQuestions[10][4] = "";
+        movieQuestions[10][1] = "Jungle Book";
+        movieQuestions[10][2] = "Sword in the Stone";
+        movieQuestions[10][3] = "Little Mermaid";
+        movieQuestions[10][4] = "Lady and the Tramp";
 
         //Question 12 & Answers
         movieQuestions[11][0] = "";
