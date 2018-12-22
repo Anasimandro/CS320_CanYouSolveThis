@@ -806,116 +806,116 @@ public class QuestionArchive {
         movieQuestions[10][4] = "Lady and the Tramp";
 
         //Question 12 & Answers
-        movieQuestions[11][0] = "";
+        movieQuestions[11][0] = "In what movie did Sidney Poitier say, 'They call me Mister Tibbs'?";
 
-        movieQuestions[11][1] = "";
-        movieQuestions[11][2] = "";
-        movieQuestions[11][3] = "";
-        movieQuestions[11][4] = "";
+        movieQuestions[11][1] = "In the Heat of the Night";
+        movieQuestions[11][2] = "A Raisin in the Sun";
+        movieQuestions[11][3] = "No Way Out";
+        movieQuestions[11][4] = "A Patch of Blue";
 
         //Question 13 & Answers
-        movieQuestions[12][0] = "";
+        movieQuestions[12][0] = "In The Wizard of Oz (1939), what was used to simulate snow during the poppy scene?";
 
-        movieQuestions[12][1] = "";
-        movieQuestions[12][2] = "";
-        movieQuestions[12][3] = "";
-        movieQuestions[12][4] = "";
+        movieQuestions[12][1] = "Asbestos";
+        movieQuestions[12][2] = "Coconut Flakes";
+        movieQuestions[12][3] = "Cornflakes";
+        movieQuestions[12][4] = "Powdered Sugar";
 
         //Question 14 & Answers
-        movieQuestions[13][0] = "";
+        movieQuestions[13][0] = "What country does The Hunger Games take place in?";
 
-        movieQuestions[13][1] = "";
-        movieQuestions[13][2] = "";
-        movieQuestions[13][3] = "";
-        movieQuestions[13][4] = "";
+        movieQuestions[13][1] = "Panem";
+        movieQuestions[13][2] = "Pangea";
+        movieQuestions[13][3] = "Narnia";
+        movieQuestions[13][4] = "Gondor";
 
         //Question 15 & Answers
-        movieQuestions[14][0] = "";
+        movieQuestions[14][0] = "In what movie does Tom Hanks say, 'There's no crying in baseball.'?";
 
-        movieQuestions[14][1] = "";
-        movieQuestions[14][2] = "";
-        movieQuestions[14][3] = "";
-        movieQuestions[14][4] = "";
+        movieQuestions[14][1] = "A League of Their Own";
+        movieQuestions[14][2] = "The Sandlot";
+        movieQuestions[14][3] = "The Natural";
+        movieQuestions[14][4] = "A League of Their Own";
 
         //Question 16 & Answers
-        movieQuestions[15][0] = "";
+        movieQuestions[15][0] = "In The Martian, where were the Mars exterior scenes shot?";
 
-        movieQuestions[15][1] = "";
-        movieQuestions[15][2] = "";
-        movieQuestions[15][3] = "";
-        movieQuestions[15][4] = "";
+        movieQuestions[15][1] = "Jordan";
+        movieQuestions[15][2] = "Wyoming";
+        movieQuestions[15][3] = "Australia";
+        movieQuestions[15][4] = "Namibia";
 
         //Question 17 & Answers
-        movieQuestions[16][0] = "";
+        movieQuestions[16][0] = "In Big Hero 6, what did the animators model Baymax's movements after?";
 
-        movieQuestions[16][1] = "";
-        movieQuestions[16][2] = "";
-        movieQuestions[16][3] = "";
-        movieQuestions[16][4] = "";
+        movieQuestions[16][1] = "A baby with a full diaper";
+        movieQuestions[16][2] = "A sumo wrestler";
+        movieQuestions[16][3] = "C-3PO";
+        movieQuestions[16][4] = "A penguin";
 
         //Question 18 & Answers
-        movieQuestions[17][0] = "";
+        movieQuestions[17][0] = "What kind of pet does Maleficent have in Sleeping Beauty?";
 
-        movieQuestions[17][1] = "";
-        movieQuestions[17][2] = "";
-        movieQuestions[17][3] = "";
-        movieQuestions[17][4] = "";
+        movieQuestions[17][1] = "Raven";
+        movieQuestions[17][2] = "Toad";
+        movieQuestions[17][3] = "Cat";
+        movieQuestions[17][4] = "Snake";
 
         //Question 19 & Answers
-        movieQuestions[18][0] = "";
+        movieQuestions[18][0] = "What is the name of Snow White's prince?";
 
-        movieQuestions[18][1] = "";
-        movieQuestions[18][2] = "";
-        movieQuestions[18][3] = "";
-        movieQuestions[18][4] = "";
+        movieQuestions[18][1] = "Prince Florian";
+        movieQuestions[18][2] = "Prince Phillip";
+        movieQuestions[18][3] = "Prince Edward";
+        movieQuestions[18][4] = "Prince Andrew";
 
         //Question 20 & Answers
-        movieQuestions[19][0] = "";
+        movieQuestions[19][0] = "In The Lion King, what is Simba's mother's name?";
 
-        movieQuestions[19][1] = "";
-        movieQuestions[19][2] = "";
-        movieQuestions[19][3] = "";
-        movieQuestions[19][4] = "";
+        movieQuestions[19][1] = "Sarabi";
+        movieQuestions[19][2] = "Nubia";
+        movieQuestions[19][3] = "Nala";
+        movieQuestions[19][4] = "Sarafina";
 
         //Question 21 & Answers
-        movieQuestions[20][0] = "";
+        movieQuestions[20][0] = "The soundtrack of which Disney animated feature includes seven Elvis Presley songs?";
 
-        movieQuestions[20][1] = "";
-        movieQuestions[20][2] = "";
-        movieQuestions[20][3] = "";
-        movieQuestions[20][4] = "";
+        movieQuestions[20][1] = "Lilo & Stitch";
+        movieQuestions[20][2] = "Treasure Planet";
+        movieQuestions[20][3] = "Jungle Book";
+        movieQuestions[20][4] = "Hercules";
 
         //Question 22 & Answers
-        movieQuestions[21][0] = "";
+        movieQuestions[21][0] = "What is the name of Cinderella's wicked stepmother?";
 
-        movieQuestions[21][1] = "";
-        movieQuestions[21][2] = "";
-        movieQuestions[21][3] = "";
-        movieQuestions[21][4] = "";
+        movieQuestions[21][1] = "Lady Tremaine";
+        movieQuestions[21][2] = "Lady Rochester";
+        movieQuestions[21][3] = "Lady Fairfax";
+        movieQuestions[21][4] = "Lady Tramell";
 
         //Question 23 & Answers
-        movieQuestions[22][0] = "";
+        movieQuestions[22][0] = "Where does Aladdin live?";
 
-        movieQuestions[22][1] = "";
-        movieQuestions[22][2] = "";
-        movieQuestions[22][3] = "";
-        movieQuestions[22][4] = "";
+        movieQuestions[22][1] = "Agrabah";
+        movieQuestions[22][2] = "Isthar";
+        movieQuestions[22][3] = "Qumar";
+        movieQuestions[22][4] = "Baghdad";
 
         //Question 24 & Answers
-        movieQuestions[23][0] = "";
+        movieQuestions[23][0] = "What horror movie features a serial killer wearing a mask inspired by an Edvard Munch painting?";
 
-        movieQuestions[23][1] = "";
-        movieQuestions[23][2] = "";
-        movieQuestions[23][3] = "";
-        movieQuestions[23][4] = "";
+        movieQuestions[23][1] = "Scream";
+        movieQuestions[23][2] = "Halloween";
+        movieQuestions[23][3] = "The Man in The Black Suit";
+        movieQuestions[23][4] = "Henry: Portrait of a Serial Killer";
 
         //Question 25 & Answers
-        movieQuestions[24][0] = "";
+        movieQuestions[24][0] = "What horror film caused some theatres to suggest that patrons prone to motion sickness sit in the aisle seats?";
 
-        movieQuestions[24][1] = "";
-        movieQuestions[24][2] = "";
-        movieQuestions[24][3] = "";
-        movieQuestions[24][4] = "";
+        movieQuestions[24][1] = "The Blair Witch Project";
+        movieQuestions[24][2] = "Vertigo";
+        movieQuestions[24][3] = "Mimic";
+        movieQuestions[24][4] = "Friday the 13th, Part III: 3D";
 
         return null;
     }
