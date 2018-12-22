@@ -8,10 +8,6 @@ package Model;
 
 import java.util.*;
 
-enum Category {
-    CELEBRITIES, FOOD, HISTORY, MOVIES, MUSIC;
-}
-
 public class QuestionArchive {
 
     private String[][] celebrityQuestions;
