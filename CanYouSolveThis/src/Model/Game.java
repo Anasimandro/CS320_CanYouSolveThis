@@ -1,5 +1,6 @@
 package Model;
 
+import java.io.*;
 import java.util.*;
 
 public class Game {
@@ -7,20 +8,29 @@ public class Game {
     private int currentQuestionIndex;
     private Timer timer; //instantiate
     Scanner scanner = new Scanner(System.in);
+
+    FileReader fileReader = new FileReader(SCORES);
+    FileWriter fileWriter = new FileWriter(SCORES);
+    BufferedReader reader = new BufferedReader(fileReader);
+    BufferedWriter writer = new BufferedWriter(fileWriter);
+
+    private static final String SCORES = "/Users/eylulbasakdayi/Desktop/SCORES.txt";
+
     private QuestionArchive questionArchive;
     private String[][] questions;
     private int currentQuestion;
     private boolean reboundUsed = false;
-    public Game() {
+    public Game() throws IOException {
+
         questionArchive = new QuestionArchive();
     }
 
-    public void play() {
+    public void play() throws IOException {
 
         showIdleScreen();
     }
 
-    private void showIdleScreen() {
+    private void showIdleScreen() throws IOException {
 
         System.out.println("type 1 for start 2 for exit");
         int input = scanner.nextInt();
@@ -34,7 +44,7 @@ public class Game {
 
     }
 
-    private void selectCategory() {
+    private void selectCategory() throws IOException {
         //TODO
         System.out.println("1:celebrities, 2:food, 3:history, 4:movies, 5:music");
         int input = scanner.nextInt();
@@ -56,7 +66,7 @@ public class Game {
         //QuestionArchive
     }
 
-    private void showQuestion() {
+    private void showQuestion() throws IOException {
         int currentQuestion = 0;
         for (int i = 0; i < 10; i++) {
             currentQuestion++;
@@ -70,7 +80,7 @@ public class Game {
         }
     }
 
-    private void endGame() {
+    private void endGame() throws IOException {
         //TODO
         if(currentQuestion > 5 && reboundUsed == false) {
             reboundUsed = true;
@@ -83,9 +93,10 @@ public class Game {
         //showFinalScore();
     }
 
-    private void showFinalScore() {
+    private void showFinalScore() throws IOException {
         //TODO
         //System.out.println("Your Score: " + calculateScore());
+        writer.write("Ozan buraya her seferinde calculate edilen score yazılacak String olarak.");
         System.out.println("Your Score: 1 " );
     }
 
@@ -99,7 +110,7 @@ public class Game {
 
     }
 
-    private void rebound() {
+    private void rebound() throws IOException {
         for (int i= currentQuestion; i < 10; i++) {
             currentQuestion++;
             for (int j = 0; j < 5; j++) {
@@ -112,8 +123,10 @@ public class Game {
         }
     }
 
-    private void viewPreviousScores() {
-        //TODO
+    private void viewPreviousScores() throws IOException {
+        while(reader.readLine() != null) {
+            System.out.println(reader.readLine());
+        }
     }
 
 
