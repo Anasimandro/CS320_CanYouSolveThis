@@ -7,13 +7,16 @@ public class Game {
     private int currentQuestionIndex;
     private Timer timer; //instantiate
     Scanner scanner = new Scanner(System.in);
-
+    private QuestionArchive questionArchive;
+    private String[][] questions;
+    private int currentQuestion;
+    private boolean reboundUsed = false;
     public Game() {
-
+        questionArchive = new QuestionArchive();
     }
 
+    public void play() {
 
-    private void play() {
         showIdleScreen();
     }
 
@@ -26,7 +29,6 @@ public class Game {
         else if(input == 2)
             System.exit(1);
         else
-            System.out.println("Please enter either 1 or 2");
             showIdleScreen();
 
 
@@ -37,43 +39,59 @@ public class Game {
         System.out.println("1:celebrities, 2:food, 3:history, 4:movies, 5:music");
         int input = scanner.nextInt();
 
+        if (input == 1)
+            questions = questionArchive.get10RandomCelebrityQuestions();
+        else if (input == 2)
+            questions = questionArchive.get10RandomFoodQuestions();
+        else if (input == 3)
+            questions = questionArchive.get10RandomHistoryQuestions();
+        else if (input == 4)
+            questions = questionArchive.get10RandomMovieQuestions();
+        else if (input == 5)
+            questions = questionArchive.get10RandomMusicQuestions();
+        else
+            selectCategory();
 
+        showQuestion();
         //QuestionArchive
     }
 
     private void showQuestion() {
-        //TODO
-        //Shows the current question
-        /*
-         * for(currentQuestion;currentQuestion < ...;currentQuestion++)
-         * print question i
-         *
-         * */
+        int currentQuestion = 0;
+        for (int i = 0; i < 10; i++) {
+            currentQuestion++;
+            for (int j = 0; j < 5; j++) {
+                System.out.println(questions[i][j]);
+            }
+            System.out.println("Your answer: ");
+            int input = scanner.nextInt();
+            if (input != 1)
+                endGame();
+        }
     }
 
     private void endGame() {
         //TODO
+        if(currentQuestion > 5 && reboundUsed == false) {
+            reboundUsed = true;
+            rebound();
+        }
+        else
+            showFinalScore();
+
         //ask rebound if question 6...
         //showFinalScore();
     }
 
     private void showFinalScore() {
         //TODO
-        //calculateScore();
+        //System.out.println("Your Score: " + calculateScore());
+        System.out.println("Your Score: 1 " );
     }
 
     private int calculateScore() {
         //TODO
         //calculation algorithm
-
-        if(currentQuestionIndex == 0)
-            return 0;
-        else if (currentQuestionIndex <= 3)
-            return currentQuestionIndex * 125;
-        else if(currentQuestionIndex <= 6)
-            return 500 + (currentQuestionIndex - 3 ) * 200;
-
-
         return 0;
     }
 
@@ -82,7 +100,16 @@ public class Game {
     }
 
     private void rebound() {
-
+        for (int i= currentQuestion; i < 10; i++) {
+            currentQuestion++;
+            for (int j = 0; j < 5; j++) {
+                System.out.println(questions[i][j]);
+            }
+            System.out.println("Your answer: ");
+            int input = scanner.nextInt();
+            if (input != 1)
+                endGame();
+        }
     }
 
     private void viewPreviousScores() {
