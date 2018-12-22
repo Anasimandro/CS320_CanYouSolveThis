@@ -8,9 +8,9 @@ public class Game {
     private int currentQuestionIndex;
     private Timer timer; //instantiate
     Scanner scanner = new Scanner(System.in);
-    private static final String SCORES = "CanYouSolveThis/SCORES";
+    static final String SCORES = "/Users/eylulbasakdayi/IdeaProjects/CS320_CanYouSolveThis/CanYouSolveThis/SCORES";
     FileReader fileReader = new FileReader(SCORES);
-    FileWriter fileWriter = new FileWriter(SCORES);
+    FileWriter fileWriter = new FileWriter(SCORES, true);
     BufferedReader reader = new BufferedReader(fileReader);
     BufferedWriter writer = new BufferedWriter(fileWriter);
 
@@ -102,7 +102,7 @@ public class Game {
     private void showFinalScore() throws IOException {
         //TODO
         //System.out.println("Your Score: " + calculateScore());
-        writer.write("Ozan buraya her seferinde calculate edilen score yazılacak String olarak.");
+        writer.append("YENİ CALCULATE EDİLEN SCORE\n");
         System.out.println("Your Score: 1 " );
     }
 
@@ -134,9 +134,16 @@ public class Game {
     }
 
     private void viewPreviousScores() throws IOException {
-        while(reader.readLine() != null) {
-            System.out.println(reader.readLine());
-        }
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
+        System.out.println(reader.readLine());
     }
 
     public boolean checkAnswer (String answer) {
