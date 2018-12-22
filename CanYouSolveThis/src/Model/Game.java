@@ -14,7 +14,7 @@ public class Game {
     BufferedReader reader = new BufferedReader(fileReader);
     BufferedWriter writer = new BufferedWriter(fileWriter);
 
-    private static final String SCORES = "/Users/eylulbasakdayi/Desktop/SCORES.txt";
+    private static final String SCORES = "src/SCORES.txt";
 
     private QuestionArchive questionArchive;
     private String[][] questions;
