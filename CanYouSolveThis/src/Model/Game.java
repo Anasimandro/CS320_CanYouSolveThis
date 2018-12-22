@@ -13,6 +13,7 @@ public class Game {
     FileWriter fileWriter = new FileWriter(SCORES);
     BufferedReader reader = new BufferedReader(fileReader);
     BufferedWriter writer = new BufferedWriter(fileWriter);
+
     private boolean hasJoker = true;
 
 
@@ -136,6 +137,16 @@ public class Game {
         while(reader.readLine() != null) {
             System.out.println(reader.readLine());
         }
+    }
+
+    public boolean checkAnswer (String answer) {
+        String rightAnswer = questions[currentQuestion][1];
+        return rightAnswer.equals(answer);
+
+    }
+
+    public String[] getCurrentQuestion () {
+        return questions[currentQuestion];
     }
 
 
