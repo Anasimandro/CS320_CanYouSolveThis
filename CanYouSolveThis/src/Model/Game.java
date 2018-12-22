@@ -21,6 +21,8 @@ public class Game {
     private String[][] questions;
     private int currentQuestion;
     private boolean reboundUsed = false;
+    private int score = 0;
+
     public Game() throws IOException {
 
         questionArchive = new QuestionArchive();
@@ -106,10 +108,14 @@ public class Game {
         System.out.println("Your Score: 1 " );
     }
 
-    private int calculateScore() {
-        //TODO
-        //calculation algorithm
-        return 0;
+    private void calculateScore() {
+        if(currentQuestion == 1 || currentQuestion == 2 || currentQuestion == 3 || currentQuestion == 4) {
+            score += 100;
+        } else if (currentQuestion == 5 || currentQuestion == 6 || currentQuestion == 7) {
+            score += 200;
+        } else {
+            score += 300;
+        }
     }
 
     private void useJoker() {
