@@ -917,213 +917,213 @@ public class QuestionArchive {
         movieQuestions[24][3] = "Mimic";
         movieQuestions[24][4] = "Friday the 13th, Part III: 3D";
 
-        return null;
+        return movieQuestions;
     }
 
     private String[][] getMusicQuestions() {
         musicQuestions = new String[25][5];
 
         //Question 1 & Answers
-        musicQuestions[0][0] =
+        musicQuestions[0][0] = "Who was awarded the very first gold record?";
 
-        musicQuestions[0][1] =
-        musicQuestions[0][2] =
-        musicQuestions[0][3] =
-        musicQuestions[0][4] =
+        musicQuestions[0][1] = "Perry Como";
+        musicQuestions[0][2] = "Elvis Presley";
+        musicQuestions[0][3] = "Nat King Cole";
+        musicQuestions[0][4] = "The Beatles";
 
         //Question 2 & Answers
-        musicQuestions[1][0] = "";
+        musicQuestions[1][0] = "What pop singer is known as 'The Material Girl' ?";
 
-        musicQuestions[1][1] = "";
-        musicQuestions[1][2] = "";
-        musicQuestions[1][3] = "";
-        musicQuestions[1][4] = "";
+        musicQuestions[1][1] = "Madonna";
+        musicQuestions[1][2] = "Britney Spears";
+        musicQuestions[1][3] = "Taylor Swift";
+        musicQuestions[1][4] = "Christina Aguilera";
 
         //Question 3 & Answers
-        musicQuestions[2][0] = "";
+        musicQuestions[2][0] = "How much pressure do the strings in a grand piano exert on the frame?";
 
-        musicQuestions[2][1] = "";
-        musicQuestions[2][2] = "";
-        musicQuestions[2][3] = "";
-        musicQuestions[2][4] = "";
+        musicQuestions[2][1] = "30 tons";
+        musicQuestions[2][2] = "30 lbs";
+        musicQuestions[2][3] = "300 lbs";
+        musicQuestions[2][4] = "3 tons";
 
         //Question 4 & Answers
-        musicQuestions[3][0] = "";
+        musicQuestions[3][0] = "Who did the vocals for Pink Floyd's 'Great Gig in the Sky' ?";
 
-        musicQuestions[3][1] = "";
-        musicQuestions[3][2] = "";
-        musicQuestions[3][3] = "";
-        musicQuestions[3][4] = "";
+        musicQuestions[3][1] = "Clare Torry";
+        musicQuestions[3][2] = "Janis Joplin";
+        musicQuestions[3][3] = "Roger Waters";
+        musicQuestions[3][4] = "Vicki Brown";
 
         //Question 5 & Answers
-        musicQuestions[4][0] = "";
+        musicQuestions[4][0] = "What was the band known as Linkin Park originally called?";
 
-        musicQuestions[4][1] = "";
-        musicQuestions[4][2] = "";
-        musicQuestions[4][3] = "";
-        musicQuestions[4][4] = "";
+        musicQuestions[4][1] = "Xero";
+        musicQuestions[4][2] = "Meteora";
+        musicQuestions[4][3] = "Hybrid Theory";
+        musicQuestions[4][4] = "Reanimators";
 
         //Question 6 & Answers
-        musicQuestions[5][0] = "";
+        musicQuestions[5][0] = "What are piano keys made out of?";
 
-        musicQuestions[5][1] = "";
-        musicQuestions[5][2] = "";
-        musicQuestions[5][3] = "";
-        musicQuestions[5][4] = "";
+        musicQuestions[5][1] = "Plastic";
+        musicQuestions[5][2] = "Ivory";
+        musicQuestions[5][3] = "Marble";
+        musicQuestions[5][4] = "Porcelain";
 
         //Question 7 & Answers
-        musicQuestions[6][0] = "";
+        musicQuestions[6][0] = "How many pieces of wood are there in a modern violin?";
 
-        musicQuestions[6][1] = "";
-        musicQuestions[6][2] = "";
-        musicQuestions[6][3] = "";
-        musicQuestions[6][4] = "";
+        musicQuestions[6][1] = "70";
+        musicQuestions[6][2] = "2";
+        musicQuestions[6][3] = "15";
+        musicQuestions[6][4] = "30";
 
         //Question 8 & Answers
-        musicQuestions[7][0] = "";
+        musicQuestions[7][0] = "What is the recommended drying or 'seasoning' time for wood used to make a violin?";
 
-        musicQuestions[7][1] = "";
-        musicQuestions[7][2] = "";
-        musicQuestions[7][3] = "";
-        musicQuestions[7][4] = "";
+        musicQuestions[7][1] = "10 years";
+        musicQuestions[7][2] = "10 days";
+        musicQuestions[7][3] = "10 weeks";
+        musicQuestions[7][4] = "10 months";
 
         //Question 9 & Answers
-        musicQuestions[8][0] = "";
+        musicQuestions[8][0] = "Which musical term means to play a piece of music lively and fast?";
 
-        musicQuestions[8][1] = "";
-        musicQuestions[8][2] = "";
-        musicQuestions[8][3] = "";
-        musicQuestions[8][4] = "";
+        musicQuestions[8][1] = "Allegro";
+        musicQuestions[8][2] = "Castrato";
+        musicQuestions[8][3] = "Adagio";
+        musicQuestions[8][4] = "Cadenza";
 
         //Question 10 & Answers
-        musicQuestions[9][0] = "";
+        musicQuestions[9][0] = "How many notes are included in a chromatic scale?";
 
-        musicQuestions[9][1] = "";
-        musicQuestions[9][2] = "";
-        musicQuestions[9][3] = "";
-        musicQuestions[9][4] = "";
+        musicQuestions[9][1] = "12";
+        musicQuestions[9][2] = "8";
+        musicQuestions[9][3] = "6";
+        musicQuestions[9][4] = "5";
 
         //Question 11 & Answers
-        musicQuestions[10][0] = "";
+        musicQuestions[10][0] = "What is the longest running stage musical?";
 
-        musicQuestions[10][1] = "";
-        musicQuestions[10][2] = "";
-        musicQuestions[10][3] = "";
-        musicQuestions[10][4] = "";
+        musicQuestions[10][1] = "The Fantasticks";
+        musicQuestions[10][2] = "Cats";
+        musicQuestions[10][3] = "Phantom of the Opera";
+        musicQuestions[10][4] = "Chicago";
 
         //Question 12 & Answers
-        musicQuestions[11][0] = "";
+        musicQuestions[11][0] = "What member of the Red Hot Chili Peppers grew up with Cher as his babysitter?";
 
-        musicQuestions[11][1] = "";
-        musicQuestions[11][2] = "";
-        musicQuestions[11][3] = "";
-        musicQuestions[11][4] = "";
+        musicQuestions[11][1] = "Anthony Kiedis";
+        musicQuestions[11][2] = "Flea";
+        musicQuestions[11][3] = "Chad Smith";
+        musicQuestions[11][4] = "Josh Klinghoffer";
 
         //Question 13 & Answers
-        musicQuestions[12][0] = "";
+        musicQuestions[12][0] = "Who holds the record for the shortest song ever recorded?";
 
-        musicQuestions[12][1] = "";
-        musicQuestions[12][2] = "";
-        musicQuestions[12][3] = "";
-        musicQuestions[12][4] = "";
+        musicQuestions[12][1] = "Napalm Death";
+        musicQuestions[12][2] = "The Beatles";
+        musicQuestions[12][3] = "David Bowie";
+        musicQuestions[12][4] = "Beyoncé";
 
         //Question 14 & Answers
-        musicQuestions[13][0] = "";
+        musicQuestions[13][0] = "What is the oldest surviving musical instrument?";
 
-        musicQuestions[13][1] = "";
-        musicQuestions[13][2] = "";
-        musicQuestions[13][3] = "";
-        musicQuestions[13][4] = "";
+        musicQuestions[13][1] = "Flute";
+        musicQuestions[13][2] = "Drum";
+        musicQuestions[13][3] = "Lyre";
+        musicQuestions[13][4] = "Trumpet";
 
         //Question 15 & Answers
-        musicQuestions[14][0] = "";
+        musicQuestions[14][0] = "What is the name of the instrumentalists in Ghost BC?";
 
-        musicQuestions[14][1] = "";
-        musicQuestions[14][2] = "";
-        musicQuestions[14][3] = "";
-        musicQuestions[14][4] = "";
+        musicQuestions[14][1] = "Nameless Ghouls";
+        musicQuestions[14][2] = "Nameless Souls";
+        musicQuestions[14][3] = "Nameless Ghosts";
+        musicQuestions[14][4] = "Nameless Devils";
 
         //Question 16 & Answers
-        musicQuestions[15][0] = "";
+        musicQuestions[15][0] = "Which one is not a member of One Direction?";
 
-        musicQuestions[15][1] = "";
-        musicQuestions[15][2] = "";
-        musicQuestions[15][3] = "";
-        musicQuestions[15][4] = "";
+        musicQuestions[15][1] = "Justin";
+        musicQuestions[15][2] = "Niall";
+        musicQuestions[15][3] = "Liam";
+        musicQuestions[15][4] = "Harry";
 
         //Question 17 & Answers
-        musicQuestions[16][0] = "";
+        musicQuestions[16][0] = "Who sings 'Karabiberim' ?";
 
-        musicQuestions[16][1] = "";
-        musicQuestions[16][2] = "";
-        musicQuestions[16][3] = "";
-        musicQuestions[16][4] = "";
+        musicQuestions[16][1] = "Serdar Ortaç";
+        musicQuestions[16][2] = "İsmail Türüt";
+        musicQuestions[16][3] = "Ajdar";
+        musicQuestions[16][4] = "Mustafa Sandal";
 
         //Question 18 & Answers
-        musicQuestions[17][0] = "";
+        musicQuestions[17][0] = "When was Evanescence founded?";
 
-        musicQuestions[17][1] = "";
-        musicQuestions[17][2] = "";
-        musicQuestions[17][3] = "";
-        musicQuestions[17][4] = "";
+        musicQuestions[17][1] = "1995";
+        musicQuestions[17][2] = "1992";
+        musicQuestions[17][3] = "1993";
+        musicQuestions[17][4] = "2000";
 
         //Question 19 & Answers
-        musicQuestions[18][0] = "";
+        musicQuestions[18][0] = "What does playing andante cantabile mean in classical music terminology?";
 
-        musicQuestions[18][1] = "";
-        musicQuestions[18][2] = "";
-        musicQuestions[18][3] = "";
-        musicQuestions[18][4] = "";
+        musicQuestions[18][1] = "Like singing a song";
+        musicQuestions[18][2] = "Like shouting";
+        musicQuestions[18][3] = "Happily";
+        musicQuestions[18][4] = "Like crying";
 
         //Question 20 & Answers
-        musicQuestions[19][0] = "";
+        musicQuestions[19][0] = "What instrument does a concertmaster play in a classical orchestra?";
 
-        musicQuestions[19][1] = "";
-        musicQuestions[19][2] = "";
-        musicQuestions[19][3] = "";
-        musicQuestions[19][4] = "";
+        musicQuestions[19][1] = "Violin";
+        musicQuestions[19][2] = "Piano";
+        musicQuestions[19][3] = "Triangle";
+        musicQuestions[19][4] = "Harp";
 
         //Question 21 & Answers
-        musicQuestions[20][0] = "";
+        musicQuestions[20][0] = "How many black keys are there in a piano?";
 
-        musicQuestions[20][1] = "";
-        musicQuestions[20][2] = "";
-        musicQuestions[20][3] = "";
-        musicQuestions[20][4] = "";
+        musicQuestions[20][1] = "36";
+        musicQuestions[20][2] = "32";
+        musicQuestions[20][3] = "40";
+        musicQuestions[20][4] = "42";
 
         //Question 22 & Answers
-        musicQuestions[21][0] = "";
+        musicQuestions[21][0] = "How many strings are there in a violin?";
 
-        musicQuestions[21][1] = "";
-        musicQuestions[21][2] = "";
-        musicQuestions[21][3] = "";
-        musicQuestions[21][4] = "";
+        musicQuestions[21][1] = "4";
+        musicQuestions[21][2] = "6";
+        musicQuestions[21][3] = "8";
+        musicQuestions[21][4] = "12";
 
         //Question 23 & Answers
-        musicQuestions[22][0] = "";
+        musicQuestions[22][0] = "A string quartet includes two violins, one viola, and one...";
 
-        musicQuestions[22][1] = "";
-        musicQuestions[22][2] = "";
-        musicQuestions[22][3] = "";
-        musicQuestions[22][4] = "";
+        musicQuestions[22][1] = "Cello";
+        musicQuestions[22][2] = "Fife";
+        musicQuestions[22][3] = "Harp";
+        musicQuestions[22][4] = "Zither";
 
         //Question 24 & Answers
-        musicQuestions[23][0] = "";
+        musicQuestions[23][0] = "When did Frederic Chopin live?";
 
-        musicQuestions[23][1] = "";
-        musicQuestions[23][2] = "";
-        musicQuestions[23][3] = "";
-        musicQuestions[23][4] = "";
+        musicQuestions[23][1] = "In the Romantic Era";
+        musicQuestions[23][2] = "In the Classical Era";
+        musicQuestions[23][3] = "In the Baroque Era";
+        musicQuestions[23][4] = "In the Medieval Era";
 
         //Question 25 & Answers
-        musicQuestions[24][0] = "";
+        musicQuestions[24][0] = "The A-flat key on a piano is also known as...";
 
-        musicQuestions[24][1] = "";
-        musicQuestions[24][2] = "";
-        musicQuestions[24][3] = "";
-        musicQuestions[24][4] = "";
+        musicQuestions[24][1] = "G#";
+        musicQuestions[24][2] = "H#";
+        musicQuestions[24][3] = "F#";
+        musicQuestions[24][4] = "D#";
 
-        return null;
+        return musicQuestions;
     }
 
 }
