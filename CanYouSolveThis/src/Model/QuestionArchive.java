@@ -8,10 +8,6 @@ package Model;
 
 import java.util.*;
 
-enum Category {
-    CELEBRITIES, FOOD, HISTORY, MOVIES, MUSIC;
-}
-
 public class QuestionArchive {
 
     private String[][] celebrityQuestions;
@@ -19,13 +15,12 @@ public class QuestionArchive {
     private String[][] historyQuestions;
     private String[][] movieQuestions;
     private String[][] musicQuestions;
-    Category category;
 
     public QuestionArchive() {
 
     }
 
-    private String[][] get10RandomCelebrityQuestions() {
+    public String[][] get10RandomCelebrityQuestions() {
         String[][] finalCelebrityQuestions = new String[10][5];
         Random questionNumber = new Random();
 
@@ -39,7 +34,7 @@ public class QuestionArchive {
         return finalCelebrityQuestions;
     }
 
-    private String[][] get10RandomFoodQuestions() {
+    public String[][] get10RandomFoodQuestions() {
         String[][] finalFoodQuestions = new String[10][5];
         Random questionNumber = new Random();
 
@@ -53,7 +48,7 @@ public class QuestionArchive {
         return finalFoodQuestions;
     }
 
-    private String[][] get10RandomHistoryQuestions() {
+    public String[][] get10RandomHistoryQuestions() {
         String[][] finalHistoryQuestions = new String[10][5];
         Random questionNumber = new Random();
 
@@ -67,7 +62,7 @@ public class QuestionArchive {
         return finalHistoryQuestions;
     }
 
-    private String[][] get10RandomMovieQuestions() {
+    public String[][] get10RandomMovieQuestions() {
         String[][] finalMovieQuestions = new String[10][5];
         Random questionNumber = new Random();
 
@@ -82,7 +77,7 @@ public class QuestionArchive {
 
     }
 
-    private String[][] get10RandomMusicQuestions() {
+    public String[][] get10RandomMusicQuestions() {
         String[][] finalMusicQuestions = new String[10][5];
         Random questionNumber = new Random();
 
@@ -101,206 +96,206 @@ public class QuestionArchive {
         celebrityQuestions = new String[25][5];
 
         //Question 1 & Answers
-        celebrityQuestions[0][0] =
+        celebrityQuestions[0][0] = "Which island nation is popstar Rihanna from?";
 
-        celebrityQuestions[0][1] =
-        celebrityQuestions[0][2] =
-        celebrityQuestions[0][3] =
-        celebrityQuestions[0][4] =
+        celebrityQuestions[0][1] = "Barbados";
+        celebrityQuestions[0][2] = "Bahamas";
+        celebrityQuestions[0][3] = "Jamaica";
+        celebrityQuestions[0][4] = "Dominic Republic";
 
         //Question 2 & Answers
-        celebrityQuestions[1][0] = "";
+        celebrityQuestions[1][0] = "What's Natalie Portman's actual last name?";
 
-        celebrityQuestions[1][1] = "";
-        celebrityQuestions[1][2] = "";
-        celebrityQuestions[1][3] = "";
-        celebrityQuestions[1][4] = "";
+        celebrityQuestions[1][1] = "Hershlag";
+        celebrityQuestions[1][2] = "Douglas";
+        celebrityQuestions[1][3] = "Horowitz";
+        celebrityQuestions[1][4] = "Hershing";
 
         //Question 3 & Answers
-        celebrityQuestions[2][0] = "";
+        celebrityQuestions[2][0] = "Which accomplished actor DIDN'T change her first name?";
 
-        celebrityQuestions[2][1] = "";
-        celebrityQuestions[2][2] = "";
-        celebrityQuestions[2][3] = "";
-        celebrityQuestions[2][4] = "";
+        celebrityQuestions[2][1] = "Shailene Woodley";
+        celebrityQuestions[2][2] = "Julianne Moore";
+        celebrityQuestions[2][3] = "Meryl Streep";
+        celebrityQuestions[2][4] = "Tina Fey";
 
         //Question 4 & Answers
-        celebrityQuestions[3][0] = "";
+        celebrityQuestions[3][0] = "How many Hemsworth brothers are there?";
 
-        celebrityQuestions[3][1] = "";
-        celebrityQuestions[3][2] = "";
-        celebrityQuestions[3][3] = "";
-        celebrityQuestions[3][4] = "";
+        celebrityQuestions[3][1] = "3";
+        celebrityQuestions[3][2] = "2";
+        celebrityQuestions[3][3] = "5";
+        celebrityQuestions[3][4] = "4";
 
         //Question 5 & Answers
-        celebrityQuestions[4][0] = "";
+        celebrityQuestions[4][0] = "Which indie frontman Zooey Deschanel used to be married to?";
 
-        celebrityQuestions[4][1] = "";
-        celebrityQuestions[4][2] = "";
-        celebrityQuestions[4][3] = "";
-        celebrityQuestions[4][4] = "";
+        celebrityQuestions[4][1] = "Ben Gibbard";
+        celebrityQuestions[4][2] = "Justin Vernon";
+        celebrityQuestions[4][3] = "Mat Kearney";
+        celebrityQuestions[4][4] = "Luke Pritchard";
 
         //Question 6 & Answers
-        celebrityQuestions[5][0] = "";
+        celebrityQuestions[5][0] = "Which actress was country singer Lyle Lovett once married to?";
 
-        celebrityQuestions[5][1] = "";
-        celebrityQuestions[5][2] = "";
-        celebrityQuestions[5][3] = "";
-        celebrityQuestions[5][4] = "";
+        celebrityQuestions[5][1] = "Julia Roberts";
+        celebrityQuestions[5][2] = "Catherine Zeta-Jones";
+        celebrityQuestions[5][3] = "Meg Ryan";
+        celebrityQuestions[5][4] = "Rene Russo";
 
         //Question 7 & Answers
-        celebrityQuestions[6][0] = "";
+        celebrityQuestions[6][0] = "In what year did Angelina Jolie and Brad Pitt get together?";
 
-        celebrityQuestions[6][1] = "";
-        celebrityQuestions[6][2] = "";
-        celebrityQuestions[6][3] = "";
-        celebrityQuestions[6][4] = "";
+        celebrityQuestions[6][1] = "2005";
+        celebrityQuestions[6][2] = "2006";
+        celebrityQuestions[6][3] = "2007";
+        celebrityQuestions[6][4] = "2002";
 
         //Question 8 & Answers
-        celebrityQuestions[7][0] = "";
+        celebrityQuestions[7][0] = "Which famous Hitchcock leading lady is the mother of Jamie Lee Curtis?";
 
-        celebrityQuestions[7][1] = "";
-        celebrityQuestions[7][2] = "";
-        celebrityQuestions[7][3] = "";
-        celebrityQuestions[7][4] = "";
+        celebrityQuestions[7][1] = "Janet Leigh";
+        celebrityQuestions[7][2] = "Grace Kelly";
+        celebrityQuestions[7][3] = "Judy Garland";
+        celebrityQuestions[7][4] = "Jayne Mansfield";
 
         //Question 9 & Answers
-        celebrityQuestions[8][0] = "";
+        celebrityQuestions[8][0] = "Who was the first person to have a No. 1 album and a No. 1 film in the same week?";
 
-        celebrityQuestions[8][1] = "";
-        celebrityQuestions[8][2] = "";
-        celebrityQuestions[8][3] = "";
-        celebrityQuestions[8][4] = "";
+        celebrityQuestions[8][1] = "Jennifer Lopez";
+        celebrityQuestions[8][2] = "Justin Timberlake";
+        celebrityQuestions[8][3] = "Beyoncé";
+        celebrityQuestions[8][4] = "Rihanna";
 
         //Question 10 & Answers
-        celebrityQuestions[9][0] = "";
+        celebrityQuestions[9][0] = "Do you know which funnyman officiated Adam Levine's wedding?";
 
-        celebrityQuestions[9][1] = "";
-        celebrityQuestions[9][2] = "";
-        celebrityQuestions[9][3] = "";
-        celebrityQuestions[9][4] = "";
+        celebrityQuestions[9][1] = "Jonah Hill";
+        celebrityQuestions[9][2] = "Michael Cera";
+        celebrityQuestions[9][3] = "Channing Tatum";
+        celebrityQuestions[9][4] = "Seth Rogen";
 
         //Question 11 & Answers
-        celebrityQuestions[10][0] = "";
+        celebrityQuestions[10][0] = "Which couple DIDN'T meet on set?";
 
-        celebrityQuestions[10][1] = "";
-        celebrityQuestions[10][2] = "";
-        celebrityQuestions[10][3] = "";
-        celebrityQuestions[10][4] = "";
+        celebrityQuestions[10][1] = "Ryan Reynolds and Scarlett Johansson";
+        celebrityQuestions[10][2] = "Ben Affleck and Jennifer Garner";
+        celebrityQuestions[10][3] = "Bradley Cooper and Zoe Saldana";
+        celebrityQuestions[10][4] = "Jude Law and Sienna Miller";
 
         //Question 12 & Answers
-        celebrityQuestions[11][0] = "";
+        celebrityQuestions[11][0] = "Which of these actors was born outside of the United States?";
 
-        celebrityQuestions[11][1] = "";
-        celebrityQuestions[11][2] = "";
-        celebrityQuestions[11][3] = "";
-        celebrityQuestions[11][4] = "";
+        celebrityQuestions[11][1] = "Amy Adams";
+        celebrityQuestions[11][2] = "Nicole Kidman";
+        celebrityQuestions[11][3] = "Brad Pitt";
+        celebrityQuestions[11][4] = "Zoe Saldana";
 
         //Question 13 & Answers
-        celebrityQuestions[12][0] = "";
+        celebrityQuestions[12][0] = "Do you know which child star Mila Kunis dated for eight years?";
 
-        celebrityQuestions[12][1] = "";
-        celebrityQuestions[12][2] = "";
-        celebrityQuestions[12][3] = "";
-        celebrityQuestions[12][4] = "";
+        celebrityQuestions[12][1] = "Macaulay Culkin";
+        celebrityQuestions[12][2] = "Jonathan Lipnicki";
+        celebrityQuestions[12][3] = "Haley Joel Osment";
+        celebrityQuestions[12][4] = "Jonathan Taylor Thomas";
 
         //Question 14 & Answers
-        celebrityQuestions[13][0] = "";
+        celebrityQuestions[13][0] = "Meryl Streep, Shaquille O'Neal, and Whitney Houston are all from which state?";
 
-        celebrityQuestions[13][1] = "";
-        celebrityQuestions[13][2] = "";
-        celebrityQuestions[13][3] = "";
-        celebrityQuestions[13][4] = "";
+        celebrityQuestions[13][1] = "New Jersey";
+        celebrityQuestions[13][2] = "Massachusetts";
+        celebrityQuestions[13][3] = "New York";
+        celebrityQuestions[13][4] = "California";
 
         //Question 15 & Answers
-        celebrityQuestions[14][0] = "";
+        celebrityQuestions[14][0] = "Which one of these stars is NOT fluent in French?";
 
-        celebrityQuestions[14][1] = "";
-        celebrityQuestions[14][2] = "";
-        celebrityQuestions[14][3] = "";
-        celebrityQuestions[14][4] = "";
+        celebrityQuestions[14][1] = "Natalie Portman";
+        celebrityQuestions[14][2] = "Bradley Cooper";
+        celebrityQuestions[14][3] = "Diane Kruger";
+        celebrityQuestions[14][4] = "Jodie Foster";
 
         //Question 16 & Answers
-        celebrityQuestions[15][0] = "";
+        celebrityQuestions[15][0] = "Which actor did NOT attend an Ivy League school?";
 
-        celebrityQuestions[15][1] = "";
-        celebrityQuestions[15][2] = "";
-        celebrityQuestions[15][3] = "";
-        celebrityQuestions[15][4] = "";
+        celebrityQuestions[15][1] = "Tina Fey";
+        celebrityQuestions[15][2] = "Mindy Kaling";
+        celebrityQuestions[15][3] = "Brooke Shields";
+        celebrityQuestions[15][4] = "Jodie Foster";
 
         //Question 17 & Answers
-        celebrityQuestions[16][0] = "";
+        celebrityQuestions[16][0] = "Which city is Katy Perry from?";
 
-        celebrityQuestions[16][1] = "";
-        celebrityQuestions[16][2] = "";
-        celebrityQuestions[16][3] = "";
-        celebrityQuestions[16][4] = "";
+        celebrityQuestions[16][1] = "Santa Barbara";
+        celebrityQuestions[16][2] = "San Francisco";
+        celebrityQuestions[16][3] = "Santa Cruz";
+        celebrityQuestions[16][4] = "San Diego";
 
         //Question 18 & Answers
-        celebrityQuestions[17][0] = "";
+        celebrityQuestions[17][0] = "Which one of these ladies is a natural redhead?";
 
-        celebrityQuestions[17][1] = "";
-        celebrityQuestions[17][2] = "";
-        celebrityQuestions[17][3] = "";
-        celebrityQuestions[17][4] = "";
+        celebrityQuestions[17][1] = "Julianne Moore";
+        celebrityQuestions[17][2] = "Alyson Hannigan";
+        celebrityQuestions[17][3] = "Christina Hendricks";
+        celebrityQuestions[17][4] = "Emma Stone";
 
         //Question 19 & Answers
-        celebrityQuestions[18][0] = "";
+        celebrityQuestions[18][0] = "Who's the youngest Kardashian?";
 
-        celebrityQuestions[18][1] = "";
-        celebrityQuestions[18][2] = "";
-        celebrityQuestions[18][3] = "";
-        celebrityQuestions[18][4] = "";
+        celebrityQuestions[18][1] = "Rob";
+        celebrityQuestions[18][2] = "Kylie";
+        celebrityQuestions[18][3] = "Khloe";
+        celebrityQuestions[18][4] = "Kim";
 
         //Question 20 & Answers
-        celebrityQuestions[19][0] = "";
+        celebrityQuestions[19][0] = "What Hollywood starlet was arrested for shoplifting from the Saks Fifth Avenue in Beverly Hills?";
 
-        celebrityQuestions[19][1] = "";
-        celebrityQuestions[19][2] = "";
-        celebrityQuestions[19][3] = "";
-        celebrityQuestions[19][4] = "";
+        celebrityQuestions[19][1] = "Winona Ryder";
+        celebrityQuestions[19][2] = "Charlize Theron";
+        celebrityQuestions[19][3] = "Angelina Jolie";
+        celebrityQuestions[19][4] = "Christina Ricci";
 
         //Question 21 & Answers
-        celebrityQuestions[20][0] = "";
+        celebrityQuestions[20][0] = "Who was the first major American celebrity whose AIDS diagnosis became public knowledge?";
 
-        celebrityQuestions[20][1] = "";
-        celebrityQuestions[20][2] = "";
-        celebrityQuestions[20][3] = "";
-        celebrityQuestions[20][4] = "";
+        celebrityQuestions[20][1] = "Rock Hudson";
+        celebrityQuestions[20][2] = "Clark Gable";
+        celebrityQuestions[20][3] = "Magic Johnson";
+        celebrityQuestions[20][4] = "Isaac Asimov";
 
         //Question 22 & Answers
-        celebrityQuestions[21][0] = "";
+        celebrityQuestions[21][0] = "What celebrity was the victim of an infamous wardrobe malfunction during the 2004 Super Bowl halftime show?";
 
-        celebrityQuestions[21][1] = "";
-        celebrityQuestions[21][2] = "";
-        celebrityQuestions[21][3] = "";
-        celebrityQuestions[21][4] = "";
+        celebrityQuestions[21][1] = "Janet Jackson";
+        celebrityQuestions[21][2] = "Lady Gaga";
+        celebrityQuestions[21][3] = "Mariah Carey";
+        celebrityQuestions[21][4] = "Madonna";
 
         //Question 23 & Answers
-        celebrityQuestions[22][0] = "";
+        celebrityQuestions[22][0] = "Who did Britney Spears kiss onstage at the 2003 MTV Video Music Awards?";
 
-        celebrityQuestions[22][1] = "";
-        celebrityQuestions[22][2] = "";
-        celebrityQuestions[22][3] = "";
-        celebrityQuestions[22][4] = "";
+        celebrityQuestions[22][1] = "Madonna";
+        celebrityQuestions[22][2] = "Justin Timberlake";
+        celebrityQuestions[22][3] = "Eminem";
+        celebrityQuestions[22][4] = "Justin Bieber";
 
         //Question 24 & Answers
-        celebrityQuestions[23][0] = "";
+        celebrityQuestions[23][0] = "What name was celebrity talk show host Oprah Winfrey born with?";
 
-        celebrityQuestions[23][1] = "";
-        celebrityQuestions[23][2] = "";
-        celebrityQuestions[23][3] = "";
-        celebrityQuestions[23][4] = "";
+        celebrityQuestions[23][1] = "Orpah";
+        celebrityQuestions[23][2] = "Pahro";
+        celebrityQuestions[23][3] = "Ohrap";
+        celebrityQuestions[23][4] = "Oprah";
 
         //Question 25 & Answers
-        celebrityQuestions[24][0] = "";
+        celebrityQuestions[24][0] = "Which of the following celebrities is left-handed?";
 
-        celebrityQuestions[24][1] = "";
-        celebrityQuestions[24][2] = "";
-        celebrityQuestions[24][3] = "";
-        celebrityQuestions[24][4] = "";
+        celebrityQuestions[24][1] = "All of them";
+        celebrityQuestions[24][2] = "Bruce Willis";
+        celebrityQuestions[24][3] = "Paul Mccartney";
+        celebrityQuestions[24][4] = "Whoopi Goldberg";
 
-        return null;
+        return celebrityQuestions;
     }
 
     private String[][] getFoodQuestions() {
@@ -513,617 +508,618 @@ public class QuestionArchive {
         historyQuestions = new String[25][5];
 
         //Question 1 & Answers
-        historyQuestions[0][0] =
+        historyQuestions[0][0] = "What is the earliest surviving system of laws?";
 
-        historyQuestions[0][1] =
-        historyQuestions[0][2] =
-        historyQuestions[0][3] =
-        historyQuestions[0][4] =
+        historyQuestions[0][1] = "Code of Hammurabi";
+        historyQuestions[0][2] = "Hebrew Torah";
+        historyQuestions[0][3] = "Rosetta Stone";
+        historyQuestions[0][4] = "Shabaka Stone";
 
         //Question 2 & Answers
-        historyQuestions[1][0] = "";
+        historyQuestions[1][0] = "What was the last battle of the Napoleonic Wars?";
 
-        historyQuestions[1][1] = "";
-        historyQuestions[1][2] = "";
-        historyQuestions[1][3] = "";
-        historyQuestions[1][4] = "";
+        historyQuestions[1][1] = "Battle of Wavre";
+        historyQuestions[1][2] = "Battle of Trafalgar";
+        historyQuestions[1][3] = "Battle of Nile";
+        historyQuestions[1][4] = "Battle of Waterloo";
 
         //Question 3 & Answers
-        historyQuestions[2][0] = "";
+        historyQuestions[2][0] = "Who was the first democratically elected President of Russia?";
 
-        historyQuestions[2][1] = "";
-        historyQuestions[2][2] = "";
-        historyQuestions[2][3] = "";
-        historyQuestions[2][4] = "";
+        historyQuestions[2][1] = "Boris Yeltsin";
+        historyQuestions[2][2] = "Vladimir Putin";
+        historyQuestions[2][3] = "Mikhail Gorbachev";
+        historyQuestions[2][4] = "Nikita Krushchev";
 
         //Question 4 & Answers
-        historyQuestions[3][0] = "";
+        historyQuestions[3][0] = "What is the correct chronological order, from earliest to latest, of the development of the following religions?";
 
-        historyQuestions[3][1] = "";
-        historyQuestions[3][2] = "";
-        historyQuestions[3][3] = "";
-        historyQuestions[3][4] = "";
+        historyQuestions[3][1] = "Buddhism, Christianity, Islam";
+        historyQuestions[3][2] = "Islam, Buddhism, Christianity";
+        historyQuestions[3][3] = "Christianity, Buddhism, Islam";
+        historyQuestions[3][4] = "Islam, Christianity, Buddhism";
 
         //Question 5 & Answers
-        historyQuestions[4][0] = "";
+        historyQuestions[4][0] = "Which of the following inventions was the first to be patented?";
 
-        historyQuestions[4][1] = "";
-        historyQuestions[4][2] = "";
-        historyQuestions[4][3] = "";
-        historyQuestions[4][4] = "";
+        historyQuestions[4][1] = "Rubber Band";
+        historyQuestions[4][2] = "Dishwasher";
+        historyQuestions[4][3] = "Cash Register";
+        historyQuestions[4][4] = "Chewing Gum";
 
         //Question 6 & Answers
-        historyQuestions[5][0] = "";
+        historyQuestions[5][0] = "What was the first city to reach a population of one million?";
 
-        historyQuestions[5][1] = "";
-        historyQuestions[5][2] = "";
-        historyQuestions[5][3] = "";
-        historyQuestions[5][4] = "";
+        historyQuestions[5][1] = "Rome";
+        historyQuestions[5][2] = "Beijing";
+        historyQuestions[5][3] = "London";
+        historyQuestions[5][4] = "New York";
 
         //Question 7 & Answers
-        historyQuestions[6][0] = "";
+        historyQuestions[6][0] = "How long did the Hundred Years' War last?";
 
-        historyQuestions[6][1] = "";
-        historyQuestions[6][2] = "";
-        historyQuestions[6][3] = "";
-        historyQuestions[6][4] = "";
+        historyQuestions[6][1] = "116";
+        historyQuestions[6][2] = "99";
+        historyQuestions[6][3] = "100";
+        historyQuestions[6][4] = "86";
 
         //Question 8 & Answers
-        historyQuestions[7][0] = "";
+        historyQuestions[7][0] = "What famous general was once attacked by rabbits?";
 
-        historyQuestions[7][1] = "";
-        historyQuestions[7][2] = "";
-        historyQuestions[7][3] = "";
-        historyQuestions[7][4] = "";
+        historyQuestions[7][1] = "Napoleon";
+        historyQuestions[7][2] = "Alexander the Great";
+        historyQuestions[7][3] = "Julius Ceaser";
+        historyQuestions[7][4] = "Genghis Khan";
 
         //Question 9 & Answers
-        historyQuestions[8][0] = "";
+        historyQuestions[8][0] = "Which of the following empires had no written language?";
 
-        historyQuestions[8][1] = "";
-        historyQuestions[8][2] = "";
-        historyQuestions[8][3] = "";
-        historyQuestions[8][4] = "";
+        historyQuestions[8][1] = "Incan Empire";
+        historyQuestions[8][2] = "Aztec Empire";
+        historyQuestions[8][3] = "Roman Empire";
+        historyQuestions[8][4] = "Tang Dynasty";
 
         //Question 10 & Answers
-        historyQuestions[9][0] = "";
+        historyQuestions[9][0] = "Who was the first U.S. President to be impeached?";
 
-        historyQuestions[9][1] = "";
-        historyQuestions[9][2] = "";
-        historyQuestions[9][3] = "";
-        historyQuestions[9][4] = "";
+        historyQuestions[9][1] = "Andrew Johnson";
+        historyQuestions[9][2] = "Bill Clinton";
+        historyQuestions[9][3] = "Herbert Hoover";
+        historyQuestions[9][4] = "Andrew Johnson";
 
         //Question 11 & Answers
-        historyQuestions[10][0] = "";
+        historyQuestions[10][0] = "What American general famously promised \"I shall return\"?\n";
 
-        historyQuestions[10][1] = "";
-        historyQuestions[10][2] = "";
-        historyQuestions[10][3] = "";
-        historyQuestions[10][4] = "";
+        historyQuestions[10][1] = "Douglas MacArthur";
+        historyQuestions[10][2] = "George Washington";
+        historyQuestions[10][3] = "George Patton";
+        historyQuestions[10][4] = "John Pershing";
 
         //Question 12 & Answers
-        historyQuestions[11][0] = "";
+        historyQuestions[11][0] = "What fraction of a person did slaves originally count as in the U.S. Constitution?";
 
-        historyQuestions[11][1] = "";
-        historyQuestions[11][2] = "";
-        historyQuestions[11][3] = "";
-        historyQuestions[11][4] = "";
+        historyQuestions[11][1] = "3/5";
+        historyQuestions[11][2] = "5/8";
+        historyQuestions[11][3] = "1/2";
+        historyQuestions[11][4] = "1/4";
 
         //Question 13 & Answers
-        historyQuestions[12][0] = "";
+        historyQuestions[12][0] = "Who was the first First Lady of the United States to win an Emmy Award?";
 
-        historyQuestions[12][1] = "";
-        historyQuestions[12][2] = "";
-        historyQuestions[12][3] = "";
-        historyQuestions[12][4] = "";
+        historyQuestions[12][1] = "Jacqueline Kennedy";
+        historyQuestions[12][2] = "Lady Bird Johnson";
+        historyQuestions[12][3] = "Rosalyn Carter";
+        historyQuestions[12][4] = "Nancy Reagan";
 
         //Question 14 & Answers
-        historyQuestions[13][0] = "";
+        historyQuestions[13][0] = "The world's first postage stamp was introduced in what year?";
 
-        historyQuestions[13][1] = "";
-        historyQuestions[13][2] = "";
-        historyQuestions[13][3] = "";
-        historyQuestions[13][4] = "";
+        historyQuestions[13][1] = "1840";
+        historyQuestions[13][2] = "1910";
+        historyQuestions[13][3] = "1760";
+        historyQuestions[13][4] = "1690";
 
         //Question 15 & Answers
-        historyQuestions[14][0] = "";
+        historyQuestions[14][0] = "Who was the first Prime Minister of the United Kingdom?";
 
-        historyQuestions[14][1] = "";
-        historyQuestions[14][2] = "";
-        historyQuestions[14][3] = "";
-        historyQuestions[14][4] = "";
+        historyQuestions[14][1] = "Robert Walpole";
+        historyQuestions[14][2] = "Henry Pelham";
+        historyQuestions[14][3] = "George Grenville";
+        historyQuestions[14][4] = "Winston Churchill";
 
         //Question 16 & Answers
-        historyQuestions[15][0] = "";
+        historyQuestions[15][0] = "Which war included major battles at Fort Sumter and Shiloh?";
 
-        historyQuestions[15][1] = "";
-        historyQuestions[15][2] = "";
-        historyQuestions[15][3] = "";
-        historyQuestions[15][4] = "";
+        historyQuestions[15][1] = "American Civil War";
+        historyQuestions[15][2] = "War of 1812";
+        historyQuestions[15][3] = "WW2";
+        historyQuestions[15][4] = "American Revolutionary War";
 
         //Question 17 & Answers
-        historyQuestions[16][0] = "";
+        historyQuestions[16][0] = "Which dictator composed six operas?";
 
-        historyQuestions[16][1] = "";
-        historyQuestions[16][2] = "";
-        historyQuestions[16][3] = "";
-        historyQuestions[16][4] = "";
+        historyQuestions[16][1] = "Kim Jong-il ";
+        historyQuestions[16][2] = "Saddam Hussein";
+        historyQuestions[16][3] = "Adolf Hitler";
+        historyQuestions[16][4] = "Mao Zedong";
 
         //Question 18 & Answers
-        historyQuestions[17][0] = "";
+        historyQuestions[17][0] = "How many Punic Wars were there?";
 
-        historyQuestions[17][1] = "";
-        historyQuestions[17][2] = "";
-        historyQuestions[17][3] = "";
-        historyQuestions[17][4] = "";
+        historyQuestions[17][1] = "3";
+        historyQuestions[17][2] = "1";
+        historyQuestions[17][3] = "4";
+        historyQuestions[17][4] = "5";
 
         //Question 19 & Answers
-        historyQuestions[18][0] = "";
+        historyQuestions[18][0] = "Who is generally considered the \"father of history\"?";
 
-        historyQuestions[18][1] = "";
-        historyQuestions[18][2] = "";
-        historyQuestions[18][3] = "";
-        historyQuestions[18][4] = "";
+        historyQuestions[18][1] = "Herodotus";
+        historyQuestions[18][2] = "Aristotle";
+        historyQuestions[18][3] = "Xenophon";
+        historyQuestions[18][4] = "Thucydides";
 
         //Question 20 & Answers
-        historyQuestions[19][0] = "";
+        historyQuestions[19][0] = "Who was the first European to discover New Zealand?";
 
-        historyQuestions[19][1] = "";
-        historyQuestions[19][2] = "";
-        historyQuestions[19][3] = "";
-        historyQuestions[19][4] = "";
+        historyQuestions[19][1] = "Abel Janszoon Tasman";
+        historyQuestions[19][2] = "Marco Polo";
+        historyQuestions[19][3] = "James Cook";
+        historyQuestions[19][4] = "March-Joseph Marion Du Fresne";
 
         //Question 21 & Answers
-        historyQuestions[20][0] = "";
+        historyQuestions[20][0] = "What was the highest social class in early Imperial Rome?";
 
-        historyQuestions[20][1] = "";
-        historyQuestions[20][2] = "";
-        historyQuestions[20][3] = "";
-        historyQuestions[20][4] = "";
+        historyQuestions[20][1] = "Patricians";
+        historyQuestions[20][2] = "Bourgeiosie";
+        historyQuestions[20][3] = "Plebians";
+        historyQuestions[20][4] = "Proletarians";
 
         //Question 22 & Answers
-        historyQuestions[21][0] = "";
+        historyQuestions[21][0] = "What did ancient Romans use as mouthwash?";
 
-        historyQuestions[21][1] = "";
-        historyQuestions[21][2] = "";
-        historyQuestions[21][3] = "";
-        historyQuestions[21][4] = "";
+        historyQuestions[21][1] = "Urine";
+        historyQuestions[21][2] = "Water";
+        historyQuestions[21][3] = "Vinegar";
+        historyQuestions[21][4] = "Blood";
 
         //Question 23 & Answers
-        historyQuestions[22][0] = "";
+        historyQuestions[22][0] = "Who was Germany's first woman Chancellor?";
 
-        historyQuestions[22][1] = "";
-        historyQuestions[22][2] = "";
-        historyQuestions[22][3] = "";
-        historyQuestions[22][4] = "";
+        historyQuestions[22][1] = "Angela Merkel";
+        historyQuestions[22][2] = "Maria Baum";
+        historyQuestions[22][3] = "Janet Yellen";
+        historyQuestions[22][4] = "Beatrix Von Storch";
 
         //Question 24 & Answers
-        historyQuestions[23][0] = "";
+        historyQuestions[23][0] = "Who was emperor of Japan during World War II?";
 
-        historyQuestions[23][1] = "";
-        historyQuestions[23][2] = "";
-        historyQuestions[23][3] = "";
-        historyQuestions[23][4] = "";
+        historyQuestions[23][1] = "Hirohito";
+        historyQuestions[23][2] = "Mutsuhito";
+        historyQuestions[23][3] = "Akihito";
+        historyQuestions[23][4] = "Yoshihito";
 
         //Question 25 & Answers
-        historyQuestions[24][0] = "";
+        historyQuestions[24][0] = "What German state preceded Nazi Germany?";
 
-        historyQuestions[24][1] = "";
-        historyQuestions[24][2] = "";
-        historyQuestions[24][3] = "";
-        historyQuestions[24][4] = "";
-        return null;
+        historyQuestions[24][1] = "Weimar Republic ";
+        historyQuestions[24][2] = "German Empire";
+        historyQuestions[24][3] = "German Confederation";
+        historyQuestions[24][4] = "Württemberg Republic";
+
+        return historyQuestions;
     }
 
     private String[][] getMovieQuestions() {
         movieQuestions = new String[25][5];
 
         //Question 1 & Answers
-        movieQuestions[0][0] =
+        movieQuestions[0][0] = "What movie won the very first Academy Award for Best Picture?";
 
-        movieQuestions[0][1] =
-        movieQuestions[0][2] =
-        movieQuestions[0][3] =
-        movieQuestions[0][4] =
+        movieQuestions[0][1] = "Wings";
+        movieQuestions[0][2] = "The Circus";
+        movieQuestions[0][3] = "All Quiet on the Western Front";
+        movieQuestions[0][4] = "Citizen Kane";
 
         //Question 2 & Answers
-        movieQuestions[1][0] = "";
+        movieQuestions[1][0] = "What classic horror movie features a serial killer in a William Shatner mask?";
 
-        movieQuestions[1][1] = "";
-        movieQuestions[1][2] = "";
-        movieQuestions[1][3] = "";
-        movieQuestions[1][4] = "";
+        movieQuestions[1][1] = "Halloween";
+        movieQuestions[1][2] = "The Fog";
+        movieQuestions[1][3] = "The 13th";
+        movieQuestions[1][4] = "Texas Chainsaw Massacre";
 
         //Question 3 & Answers
-        movieQuestions[2][0] = "";
+        movieQuestions[2][0] = "Who was the first Disney princess?";
 
-        movieQuestions[2][1] = "";
-        movieQuestions[2][2] = "";
-        movieQuestions[2][3] = "";
-        movieQuestions[2][4] = "";
+        movieQuestions[2][1] = "Persephone";
+        movieQuestions[2][2] = "Aurora";
+        movieQuestions[2][3] = "Snow White";
+        movieQuestions[2][4] = "Cinderella";
 
         //Question 4 & Answers
-        movieQuestions[3][0] = "";
+        movieQuestions[3][0] = "The Star Wars Holiday Special marked the first appearance of which Star Wars character?";
 
-        movieQuestions[3][1] = "";
-        movieQuestions[3][2] = "";
-        movieQuestions[3][3] = "";
-        movieQuestions[3][4] = "";
+        movieQuestions[3][1] = "Boba Fett";
+        movieQuestions[3][2] = "Jar Jar Binks";
+        movieQuestions[3][3] = "Lando Calrissian";
+        movieQuestions[3][4] = "Jabba the Hut";
 
         //Question 5 & Answers
-        movieQuestions[4][0] = "";
+        movieQuestions[4][0] = "In The Return of the King, who kills the Witch King?";
 
-        movieQuestions[4][1] = "";
-        movieQuestions[4][2] = "";
-        movieQuestions[4][3] = "";
-        movieQuestions[4][4] = "";
+        movieQuestions[4][1] = "Eowyn";
+        movieQuestions[4][2] = "Gandalf";
+        movieQuestions[4][3] = "Aragorn";
+        movieQuestions[4][4] = "Arwen";
 
         //Question 6 & Answers
-        movieQuestions[5][0] = "";
+        movieQuestions[5][0] = "What is the longest movie ever made?";
 
-        movieQuestions[5][1] = "";
-        movieQuestions[5][2] = "";
-        movieQuestions[5][3] = "";
-        movieQuestions[5][4] = "";
+        movieQuestions[5][1] = "The Cure for Insomnia";
+        movieQuestions[5][2] = "The Stand";
+        movieQuestions[5][3] = "Hamlet";
+        movieQuestions[5][4] = "Dances with the Wolves";
 
         //Question 7 & Answers
-        movieQuestions[6][0] = "";
+        movieQuestions[6][0] = "What was the first movie by Pixar to receive a rating higher than G in the United States?";
 
-        movieQuestions[6][1] = "";
-        movieQuestions[6][2] = "";
-        movieQuestions[6][3] = "";
-        movieQuestions[6][4] = "";
+        movieQuestions[6][1] = "The Incredibles";
+        movieQuestions[6][2] = "Finding Nemo";
+        movieQuestions[6][3] = "Monsters Inc.";
+        movieQuestions[6][4] = "Toy Story";
 
         //Question 8 & Answers
-        movieQuestions[7][0] = "";
+        movieQuestions[7][0] = "What film features a fight scene in which Bruce Lee breaks Jackie Chan's neck?";
 
-        movieQuestions[7][1] = "";
-        movieQuestions[7][2] = "";
-        movieQuestions[7][3] = "";
-        movieQuestions[7][4] = "";
+        movieQuestions[7][1] = "Enter the Dragon";
+        movieQuestions[7][2] = "Game of Death";
+        movieQuestions[7][3] = "The Big Brawl";
+        movieQuestions[7][4] = "South Park: Bigger, Longer & Uncut";
 
         //Question 9 & Answers
-        movieQuestions[8][0] = "";
+        movieQuestions[8][0] = "What was the first movie for which the cost of obtaining rights to the soundtrack outweighed all other production costs?";
 
-        movieQuestions[8][1] = "";
-        movieQuestions[8][2] = "";
-        movieQuestions[8][3] = "";
-        movieQuestions[8][4] = "";
+        movieQuestions[8][1] = "Clerks";
+        movieQuestions[8][2] = "Titanic";
+        movieQuestions[8][3] = "The Wall";
+        movieQuestions[8][4] = "The Blair Witch Project";
 
         //Question 10 & Answers
-        movieQuestions[9][0] = "";
+        movieQuestions[9][0] = "What is Boo's real name in Monster's Inc.?";
 
-        movieQuestions[9][1] = "";
-        movieQuestions[9][2] = "";
-        movieQuestions[9][3] = "";
-        movieQuestions[9][4] = "";
+        movieQuestions[9][1] = "Mary";
+        movieQuestions[9][2] = "Alice";
+        movieQuestions[9][3] = "Suzie";
+        movieQuestions[9][4] = "Ashley";
 
         //Question 11 & Answers
-        movieQuestions[10][0] = "";
+        movieQuestions[10][0] = "What was the last film personally overseen by Walt Disney?";
 
-        movieQuestions[10][1] = "";
-        movieQuestions[10][2] = "";
-        movieQuestions[10][3] = "";
-        movieQuestions[10][4] = "";
+        movieQuestions[10][1] = "Jungle Book";
+        movieQuestions[10][2] = "Sword in the Stone";
+        movieQuestions[10][3] = "Little Mermaid";
+        movieQuestions[10][4] = "Lady and the Tramp";
 
         //Question 12 & Answers
-        movieQuestions[11][0] = "";
+        movieQuestions[11][0] = "In what movie did Sidney Poitier say, 'They call me Mister Tibbs'?";
 
-        movieQuestions[11][1] = "";
-        movieQuestions[11][2] = "";
-        movieQuestions[11][3] = "";
-        movieQuestions[11][4] = "";
+        movieQuestions[11][1] = "In the Heat of the Night";
+        movieQuestions[11][2] = "A Raisin in the Sun";
+        movieQuestions[11][3] = "No Way Out";
+        movieQuestions[11][4] = "A Patch of Blue";
 
         //Question 13 & Answers
-        movieQuestions[12][0] = "";
+        movieQuestions[12][0] = "In The Wizard of Oz (1939), what was used to simulate snow during the poppy scene?";
 
-        movieQuestions[12][1] = "";
-        movieQuestions[12][2] = "";
-        movieQuestions[12][3] = "";
-        movieQuestions[12][4] = "";
+        movieQuestions[12][1] = "Asbestos";
+        movieQuestions[12][2] = "Coconut Flakes";
+        movieQuestions[12][3] = "Cornflakes";
+        movieQuestions[12][4] = "Powdered Sugar";
 
         //Question 14 & Answers
-        movieQuestions[13][0] = "";
+        movieQuestions[13][0] = "What country does The Hunger Games take place in?";
 
-        movieQuestions[13][1] = "";
-        movieQuestions[13][2] = "";
-        movieQuestions[13][3] = "";
-        movieQuestions[13][4] = "";
+        movieQuestions[13][1] = "Panem";
+        movieQuestions[13][2] = "Pangea";
+        movieQuestions[13][3] = "Narnia";
+        movieQuestions[13][4] = "Gondor";
 
         //Question 15 & Answers
-        movieQuestions[14][0] = "";
+        movieQuestions[14][0] = "In what movie does Tom Hanks say, 'There's no crying in baseball.'?";
 
-        movieQuestions[14][1] = "";
-        movieQuestions[14][2] = "";
-        movieQuestions[14][3] = "";
-        movieQuestions[14][4] = "";
+        movieQuestions[14][1] = "A League of Their Own";
+        movieQuestions[14][2] = "The Sandlot";
+        movieQuestions[14][3] = "The Natural";
+        movieQuestions[14][4] = "A League of Their Own";
 
         //Question 16 & Answers
-        movieQuestions[15][0] = "";
+        movieQuestions[15][0] = "In The Martian, where were the Mars exterior scenes shot?";
 
-        movieQuestions[15][1] = "";
-        movieQuestions[15][2] = "";
-        movieQuestions[15][3] = "";
-        movieQuestions[15][4] = "";
+        movieQuestions[15][1] = "Jordan";
+        movieQuestions[15][2] = "Wyoming";
+        movieQuestions[15][3] = "Australia";
+        movieQuestions[15][4] = "Namibia";
 
         //Question 17 & Answers
-        movieQuestions[16][0] = "";
+        movieQuestions[16][0] = "In Big Hero 6, what did the animators model Baymax's movements after?";
 
-        movieQuestions[16][1] = "";
-        movieQuestions[16][2] = "";
-        movieQuestions[16][3] = "";
-        movieQuestions[16][4] = "";
+        movieQuestions[16][1] = "A baby with a full diaper";
+        movieQuestions[16][2] = "A sumo wrestler";
+        movieQuestions[16][3] = "C-3PO";
+        movieQuestions[16][4] = "A penguin";
 
         //Question 18 & Answers
-        movieQuestions[17][0] = "";
+        movieQuestions[17][0] = "What kind of pet does Maleficent have in Sleeping Beauty?";
 
-        movieQuestions[17][1] = "";
-        movieQuestions[17][2] = "";
-        movieQuestions[17][3] = "";
-        movieQuestions[17][4] = "";
+        movieQuestions[17][1] = "Raven";
+        movieQuestions[17][2] = "Toad";
+        movieQuestions[17][3] = "Cat";
+        movieQuestions[17][4] = "Snake";
 
         //Question 19 & Answers
-        movieQuestions[18][0] = "";
+        movieQuestions[18][0] = "What is the name of Snow White's prince?";
 
-        movieQuestions[18][1] = "";
-        movieQuestions[18][2] = "";
-        movieQuestions[18][3] = "";
-        movieQuestions[18][4] = "";
+        movieQuestions[18][1] = "Prince Florian";
+        movieQuestions[18][2] = "Prince Phillip";
+        movieQuestions[18][3] = "Prince Edward";
+        movieQuestions[18][4] = "Prince Andrew";
 
         //Question 20 & Answers
-        movieQuestions[19][0] = "";
+        movieQuestions[19][0] = "In The Lion King, what is Simba's mother's name?";
 
-        movieQuestions[19][1] = "";
-        movieQuestions[19][2] = "";
-        movieQuestions[19][3] = "";
-        movieQuestions[19][4] = "";
+        movieQuestions[19][1] = "Sarabi";
+        movieQuestions[19][2] = "Nubia";
+        movieQuestions[19][3] = "Nala";
+        movieQuestions[19][4] = "Sarafina";
 
         //Question 21 & Answers
-        movieQuestions[20][0] = "";
+        movieQuestions[20][0] = "The soundtrack of which Disney animated feature includes seven Elvis Presley songs?";
 
-        movieQuestions[20][1] = "";
-        movieQuestions[20][2] = "";
-        movieQuestions[20][3] = "";
-        movieQuestions[20][4] = "";
+        movieQuestions[20][1] = "Lilo & Stitch";
+        movieQuestions[20][2] = "Treasure Planet";
+        movieQuestions[20][3] = "Jungle Book";
+        movieQuestions[20][4] = "Hercules";
 
         //Question 22 & Answers
-        movieQuestions[21][0] = "";
+        movieQuestions[21][0] = "What is the name of Cinderella's wicked stepmother?";
 
-        movieQuestions[21][1] = "";
-        movieQuestions[21][2] = "";
-        movieQuestions[21][3] = "";
-        movieQuestions[21][4] = "";
+        movieQuestions[21][1] = "Lady Tremaine";
+        movieQuestions[21][2] = "Lady Rochester";
+        movieQuestions[21][3] = "Lady Fairfax";
+        movieQuestions[21][4] = "Lady Tramell";
 
         //Question 23 & Answers
-        movieQuestions[22][0] = "";
+        movieQuestions[22][0] = "Where does Aladdin live?";
 
-        movieQuestions[22][1] = "";
-        movieQuestions[22][2] = "";
-        movieQuestions[22][3] = "";
-        movieQuestions[22][4] = "";
+        movieQuestions[22][1] = "Agrabah";
+        movieQuestions[22][2] = "Isthar";
+        movieQuestions[22][3] = "Qumar";
+        movieQuestions[22][4] = "Baghdad";
 
         //Question 24 & Answers
-        movieQuestions[23][0] = "";
+        movieQuestions[23][0] = "What horror movie features a serial killer wearing a mask inspired by an Edvard Munch painting?";
 
-        movieQuestions[23][1] = "";
-        movieQuestions[23][2] = "";
-        movieQuestions[23][3] = "";
-        movieQuestions[23][4] = "";
+        movieQuestions[23][1] = "Scream";
+        movieQuestions[23][2] = "Halloween";
+        movieQuestions[23][3] = "The Man in The Black Suit";
+        movieQuestions[23][4] = "Henry: Portrait of a Serial Killer";
 
         //Question 25 & Answers
-        movieQuestions[24][0] = "";
+        movieQuestions[24][0] = "What horror film caused some theatres to suggest that patrons prone to motion sickness sit in the aisle seats?";
 
-        movieQuestions[24][1] = "";
-        movieQuestions[24][2] = "";
-        movieQuestions[24][3] = "";
-        movieQuestions[24][4] = "";
+        movieQuestions[24][1] = "The Blair Witch Project";
+        movieQuestions[24][2] = "Vertigo";
+        movieQuestions[24][3] = "Mimic";
+        movieQuestions[24][4] = "Friday the 13th, Part III: 3D";
 
-        return null;
+        return movieQuestions;
     }
 
     private String[][] getMusicQuestions() {
         musicQuestions = new String[25][5];
 
         //Question 1 & Answers
-        musicQuestions[0][0] =
+        musicQuestions[0][0] = "Who was awarded the very first gold record?";
 
-        musicQuestions[0][1] =
-        musicQuestions[0][2] =
-        musicQuestions[0][3] =
-        musicQuestions[0][4] =
+        musicQuestions[0][1] = "Perry Como";
+        musicQuestions[0][2] = "Elvis Presley";
+        musicQuestions[0][3] = "Nat King Cole";
+        musicQuestions[0][4] = "The Beatles";
 
         //Question 2 & Answers
-        musicQuestions[1][0] = "";
+        musicQuestions[1][0] = "What pop singer is known as 'The Material Girl' ?";
 
-        musicQuestions[1][1] = "";
-        musicQuestions[1][2] = "";
-        musicQuestions[1][3] = "";
-        musicQuestions[1][4] = "";
+        musicQuestions[1][1] = "Madonna";
+        musicQuestions[1][2] = "Britney Spears";
+        musicQuestions[1][3] = "Taylor Swift";
+        musicQuestions[1][4] = "Christina Aguilera";
 
         //Question 3 & Answers
-        musicQuestions[2][0] = "";
+        musicQuestions[2][0] = "How much pressure do the strings in a grand piano exert on the frame?";
 
-        musicQuestions[2][1] = "";
-        musicQuestions[2][2] = "";
-        musicQuestions[2][3] = "";
-        musicQuestions[2][4] = "";
+        musicQuestions[2][1] = "30 tons";
+        musicQuestions[2][2] = "30 lbs";
+        musicQuestions[2][3] = "300 lbs";
+        musicQuestions[2][4] = "3 tons";
 
         //Question 4 & Answers
-        musicQuestions[3][0] = "";
+        musicQuestions[3][0] = "Who did the vocals for Pink Floyd's 'Great Gig in the Sky' ?";
 
-        musicQuestions[3][1] = "";
-        musicQuestions[3][2] = "";
-        musicQuestions[3][3] = "";
-        musicQuestions[3][4] = "";
+        musicQuestions[3][1] = "Clare Torry";
+        musicQuestions[3][2] = "Janis Joplin";
+        musicQuestions[3][3] = "Roger Waters";
+        musicQuestions[3][4] = "Vicki Brown";
 
         //Question 5 & Answers
-        musicQuestions[4][0] = "";
+        musicQuestions[4][0] = "What was the band known as Linkin Park originally called?";
 
-        musicQuestions[4][1] = "";
-        musicQuestions[4][2] = "";
-        musicQuestions[4][3] = "";
-        musicQuestions[4][4] = "";
+        musicQuestions[4][1] = "Xero";
+        musicQuestions[4][2] = "Meteora";
+        musicQuestions[4][3] = "Hybrid Theory";
+        musicQuestions[4][4] = "Reanimators";
 
         //Question 6 & Answers
-        musicQuestions[5][0] = "";
+        musicQuestions[5][0] = "What are piano keys made out of?";
 
-        musicQuestions[5][1] = "";
-        musicQuestions[5][2] = "";
-        musicQuestions[5][3] = "";
-        musicQuestions[5][4] = "";
+        musicQuestions[5][1] = "Plastic";
+        musicQuestions[5][2] = "Ivory";
+        musicQuestions[5][3] = "Marble";
+        musicQuestions[5][4] = "Porcelain";
 
         //Question 7 & Answers
-        musicQuestions[6][0] = "";
+        musicQuestions[6][0] = "How many pieces of wood are there in a modern violin?";
 
-        musicQuestions[6][1] = "";
-        musicQuestions[6][2] = "";
-        musicQuestions[6][3] = "";
-        musicQuestions[6][4] = "";
+        musicQuestions[6][1] = "70";
+        musicQuestions[6][2] = "2";
+        musicQuestions[6][3] = "15";
+        musicQuestions[6][4] = "30";
 
         //Question 8 & Answers
-        musicQuestions[7][0] = "";
+        musicQuestions[7][0] = "What is the recommended drying or 'seasoning' time for wood used to make a violin?";
 
-        musicQuestions[7][1] = "";
-        musicQuestions[7][2] = "";
-        musicQuestions[7][3] = "";
-        musicQuestions[7][4] = "";
+        musicQuestions[7][1] = "10 years";
+        musicQuestions[7][2] = "10 days";
+        musicQuestions[7][3] = "10 weeks";
+        musicQuestions[7][4] = "10 months";
 
         //Question 9 & Answers
-        musicQuestions[8][0] = "";
+        musicQuestions[8][0] = "Which musical term means to play a piece of music lively and fast?";
 
-        musicQuestions[8][1] = "";
-        musicQuestions[8][2] = "";
-        musicQuestions[8][3] = "";
-        musicQuestions[8][4] = "";
+        musicQuestions[8][1] = "Allegro";
+        musicQuestions[8][2] = "Castrato";
+        musicQuestions[8][3] = "Adagio";
+        musicQuestions[8][4] = "Cadenza";
 
         //Question 10 & Answers
-        musicQuestions[9][0] = "";
+        musicQuestions[9][0] = "How many notes are included in a chromatic scale?";
 
-        musicQuestions[9][1] = "";
-        musicQuestions[9][2] = "";
-        musicQuestions[9][3] = "";
-        musicQuestions[9][4] = "";
+        musicQuestions[9][1] = "12";
+        musicQuestions[9][2] = "8";
+        musicQuestions[9][3] = "6";
+        musicQuestions[9][4] = "5";
 
         //Question 11 & Answers
-        musicQuestions[10][0] = "";
+        musicQuestions[10][0] = "What is the longest running stage musical?";
 
-        musicQuestions[10][1] = "";
-        musicQuestions[10][2] = "";
-        musicQuestions[10][3] = "";
-        musicQuestions[10][4] = "";
+        musicQuestions[10][1] = "The Fantasticks";
+        musicQuestions[10][2] = "Cats";
+        musicQuestions[10][3] = "Phantom of the Opera";
+        musicQuestions[10][4] = "Chicago";
 
         //Question 12 & Answers
-        musicQuestions[11][0] = "";
+        musicQuestions[11][0] = "What member of the Red Hot Chili Peppers grew up with Cher as his babysitter?";
 
-        musicQuestions[11][1] = "";
-        musicQuestions[11][2] = "";
-        musicQuestions[11][3] = "";
-        musicQuestions[11][4] = "";
+        musicQuestions[11][1] = "Anthony Kiedis";
+        musicQuestions[11][2] = "Flea";
+        musicQuestions[11][3] = "Chad Smith";
+        musicQuestions[11][4] = "Josh Klinghoffer";
 
         //Question 13 & Answers
-        musicQuestions[12][0] = "";
+        musicQuestions[12][0] = "Who holds the record for the shortest song ever recorded?";
 
-        musicQuestions[12][1] = "";
-        musicQuestions[12][2] = "";
-        musicQuestions[12][3] = "";
-        musicQuestions[12][4] = "";
+        musicQuestions[12][1] = "Napalm Death";
+        musicQuestions[12][2] = "The Beatles";
+        musicQuestions[12][3] = "David Bowie";
+        musicQuestions[12][4] = "Beyoncé";
 
         //Question 14 & Answers
-        musicQuestions[13][0] = "";
+        musicQuestions[13][0] = "What is the oldest surviving musical instrument?";
 
-        musicQuestions[13][1] = "";
-        musicQuestions[13][2] = "";
-        musicQuestions[13][3] = "";
-        musicQuestions[13][4] = "";
+        musicQuestions[13][1] = "Flute";
+        musicQuestions[13][2] = "Drum";
+        musicQuestions[13][3] = "Lyre";
+        musicQuestions[13][4] = "Trumpet";
 
         //Question 15 & Answers
-        musicQuestions[14][0] = "";
+        musicQuestions[14][0] = "What is the name of the instrumentalists in Ghost BC?";
 
-        musicQuestions[14][1] = "";
-        musicQuestions[14][2] = "";
-        musicQuestions[14][3] = "";
-        musicQuestions[14][4] = "";
+        musicQuestions[14][1] = "Nameless Ghouls";
+        musicQuestions[14][2] = "Nameless Souls";
+        musicQuestions[14][3] = "Nameless Ghosts";
+        musicQuestions[14][4] = "Nameless Devils";
 
         //Question 16 & Answers
-        musicQuestions[15][0] = "";
+        musicQuestions[15][0] = "Which one is not a member of One Direction?";
 
-        musicQuestions[15][1] = "";
-        musicQuestions[15][2] = "";
-        musicQuestions[15][3] = "";
-        musicQuestions[15][4] = "";
+        musicQuestions[15][1] = "Justin";
+        musicQuestions[15][2] = "Niall";
+        musicQuestions[15][3] = "Liam";
+        musicQuestions[15][4] = "Harry";
 
         //Question 17 & Answers
-        musicQuestions[16][0] = "";
+        musicQuestions[16][0] = "Who sings 'Karabiberim' ?";
 
-        musicQuestions[16][1] = "";
-        musicQuestions[16][2] = "";
-        musicQuestions[16][3] = "";
-        musicQuestions[16][4] = "";
+        musicQuestions[16][1] = "Serdar Ortaç";
+        musicQuestions[16][2] = "İsmail Türüt";
+        musicQuestions[16][3] = "Ajdar";
+        musicQuestions[16][4] = "Mustafa Sandal";
 
         //Question 18 & Answers
-        musicQuestions[17][0] = "";
+        musicQuestions[17][0] = "When was Evanescence founded?";
 
-        musicQuestions[17][1] = "";
-        musicQuestions[17][2] = "";
-        musicQuestions[17][3] = "";
-        musicQuestions[17][4] = "";
+        musicQuestions[17][1] = "1995";
+        musicQuestions[17][2] = "1992";
+        musicQuestions[17][3] = "1993";
+        musicQuestions[17][4] = "2000";
 
         //Question 19 & Answers
-        musicQuestions[18][0] = "";
+        musicQuestions[18][0] = "What does playing andante cantabile mean in classical music terminology?";
 
-        musicQuestions[18][1] = "";
-        musicQuestions[18][2] = "";
-        musicQuestions[18][3] = "";
-        musicQuestions[18][4] = "";
+        musicQuestions[18][1] = "Like singing a song";
+        musicQuestions[18][2] = "Like shouting";
+        musicQuestions[18][3] = "Happily";
+        musicQuestions[18][4] = "Like crying";
 
         //Question 20 & Answers
-        musicQuestions[19][0] = "";
+        musicQuestions[19][0] = "What instrument does a concertmaster play in a classical orchestra?";
 
-        musicQuestions[19][1] = "";
-        musicQuestions[19][2] = "";
-        musicQuestions[19][3] = "";
-        musicQuestions[19][4] = "";
+        musicQuestions[19][1] = "Violin";
+        musicQuestions[19][2] = "Piano";
+        musicQuestions[19][3] = "Triangle";
+        musicQuestions[19][4] = "Harp";
 
         //Question 21 & Answers
-        musicQuestions[20][0] = "";
+        musicQuestions[20][0] = "How many black keys are there in a piano?";
 
-        musicQuestions[20][1] = "";
-        musicQuestions[20][2] = "";
-        musicQuestions[20][3] = "";
-        musicQuestions[20][4] = "";
+        musicQuestions[20][1] = "36";
+        musicQuestions[20][2] = "32";
+        musicQuestions[20][3] = "40";
+        musicQuestions[20][4] = "42";
 
         //Question 22 & Answers
-        musicQuestions[21][0] = "";
+        musicQuestions[21][0] = "How many strings are there in a violin?";
 
-        musicQuestions[21][1] = "";
-        musicQuestions[21][2] = "";
-        musicQuestions[21][3] = "";
-        musicQuestions[21][4] = "";
+        musicQuestions[21][1] = "4";
+        musicQuestions[21][2] = "6";
+        musicQuestions[21][3] = "8";
+        musicQuestions[21][4] = "12";
 
         //Question 23 & Answers
-        musicQuestions[22][0] = "";
+        musicQuestions[22][0] = "A string quartet includes two violins, one viola, and one...";
 
-        musicQuestions[22][1] = "";
-        musicQuestions[22][2] = "";
-        musicQuestions[22][3] = "";
-        musicQuestions[22][4] = "";
+        musicQuestions[22][1] = "Cello";
+        musicQuestions[22][2] = "Fife";
+        musicQuestions[22][3] = "Harp";
+        musicQuestions[22][4] = "Zither";
 
         //Question 24 & Answers
-        musicQuestions[23][0] = "";
+        musicQuestions[23][0] = "When did Frederic Chopin live?";
 
-        musicQuestions[23][1] = "";
-        musicQuestions[23][2] = "";
-        musicQuestions[23][3] = "";
-        musicQuestions[23][4] = "";
+        musicQuestions[23][1] = "In the Romantic Era";
+        musicQuestions[23][2] = "In the Classical Era";
+        musicQuestions[23][3] = "In the Baroque Era";
+        musicQuestions[23][4] = "In the Medieval Era";
 
         //Question 25 & Answers
-        musicQuestions[24][0] = "";
+        musicQuestions[24][0] = "The A-flat key on a piano is also known as...";
 
-        musicQuestions[24][1] = "";
-        musicQuestions[24][2] = "";
-        musicQuestions[24][3] = "";
-        musicQuestions[24][4] = "";
+        musicQuestions[24][1] = "G#";
+        musicQuestions[24][2] = "H#";
+        musicQuestions[24][3] = "F#";
+        musicQuestions[24][4] = "D#";
 
-        return null;
+        return musicQuestions;
     }
 
 }
