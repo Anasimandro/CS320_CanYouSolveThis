@@ -32,7 +32,7 @@ public class CategorySelection {
         movies.setFont(new Font("Arial", Font.PLAIN, 20));
         movies.setSize(300, 50);
         movies.setLocation(450, 250);
-        movies.setBackground(Color.BLUE);
+        movies.setBackground(Color.CYAN);
 
         history.setText("History");
         history.setFont(new Font("Arial", Font.PLAIN, 20));
