@@ -80,6 +80,8 @@ public class StatusBar {
         label10.setOpaque(true);
         panel.add(label10);
 
+
+
     }
 
     public JPanel getPanel() {

@@ -11,7 +11,6 @@ public class Game {
     private String[][] questions;
     private int currentQuestion;
     private boolean reboundUsed = false;
-    private boolean hasJoker = true;
     public Game() {
         questionArchive = new QuestionArchive();
     }
@@ -58,7 +57,7 @@ public class Game {
     }
 
     private void showQuestion() {
-        currentQuestion = 0;
+        int currentQuestion = 0;
         for (int i = 0; i < 10; i++) {
             currentQuestion++;
             for (int j = 0; j < 5; j++) {
@@ -66,13 +65,8 @@ public class Game {
             }
             System.out.println("Your answer: ");
             int input = scanner.nextInt();
-
-            if (input != 1 && !(input == 5 && hasJoker)) {
+            if (input != 1)
                 endGame();
-                showIdleScreen();
-            }
-            else if (input == 5 && hasJoker)
-                hasJoker = false;
         }
     }
 
@@ -102,7 +96,7 @@ public class Game {
     }
 
     private void useJoker() {
-        hasJoker = false;
+
     }
 
     private void rebound() {
@@ -111,16 +105,10 @@ public class Game {
             for (int j = 0; j < 5; j++) {
                 System.out.println(questions[i][j]);
             }
-
             System.out.println("Your answer: ");
             int input = scanner.nextInt();
-            
-            if (input != 1 && !(input == 5 && hasJoker)) {
+            if (input != 1)
                 endGame();
-                showIdleScreen();
-            }
-            else if (input == 5 && hasJoker)
-                hasJoker = false;
         }
     }
 
