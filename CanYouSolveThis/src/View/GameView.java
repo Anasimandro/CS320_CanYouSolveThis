@@ -18,9 +18,9 @@ public class GameView implements Observer {
     public JFrame gameFrame;
     // TODO private GamePanel gamePanel;
     private JPanel startScreenPanel;
-    public JButton startButton;
-    public JButton previousScores;
-    public JButton exitButton;
+    private JButton startButton;
+    private JButton previousScores;
+    private JButton exitButton;
 
 
     public GameView(Game model, GameController controller) {
