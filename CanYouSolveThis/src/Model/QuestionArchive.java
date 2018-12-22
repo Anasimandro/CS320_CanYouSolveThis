@@ -22,6 +22,7 @@ public class QuestionArchive {
 
     public String[][] get10RandomCelebrityQuestions() {
         String[][] finalCelebrityQuestions = new String[10][5];
+        String[][] celebrityQuestions = getCelebrityQuestions();
         Random questionNumber = new Random();
 
         for(int i = 0 ; i < 10 ; i++) {
@@ -36,6 +37,7 @@ public class QuestionArchive {
 
     public String[][] get10RandomFoodQuestions() {
         String[][] finalFoodQuestions = new String[10][5];
+        String[][] foodQuestions = getFoodQuestions();
         Random questionNumber = new Random();
 
         for(int i = 0 ; i < 10 ; i++) {
@@ -50,6 +52,7 @@ public class QuestionArchive {
 
     public String[][] get10RandomHistoryQuestions() {
         String[][] finalHistoryQuestions = new String[10][5];
+        String[][] historyQuestions = getHistoryQuestions();
         Random questionNumber = new Random();
 
         for (int i = 0; i < 10; i++) {
@@ -64,6 +67,7 @@ public class QuestionArchive {
 
     public String[][] get10RandomMovieQuestions() {
         String[][] finalMovieQuestions = new String[10][5];
+        String[][] movieQuestions = getMovieQuestions();
         Random questionNumber = new Random();
 
         for (int i = 0; i < 10; i++) {
@@ -79,6 +83,7 @@ public class QuestionArchive {
 
     public String[][] get10RandomMusicQuestions() {
         String[][] finalMusicQuestions = new String[10][5];
+        String[][] musicQuestions = getMusicQuestions();
         Random questionNumber = new Random();
 
         for (int i = 0; i < 10; i++) {
