@@ -32,17 +32,16 @@ public class GameView implements Observer {
         gameFrame.setLocationRelativeTo(null);
         gameFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        StatusBar startScreen = new StatusBar();
-
         createStartScreenPanel();
 
-        //startPanel.setVisible(true);
+        gameFrame.pack();
+        gameFrame.setLocationRelativeTo(null);
+        gameFrame.setResizable(false);
         gameFrame.setVisible(true);
 
     }
 
     public void createStartScreenPanel() {
-
 
         JPanel startScreenPanel = new JPanel();
         startScreenPanel.setLayout(null);
@@ -56,7 +55,7 @@ public class GameView implements Observer {
         JButton previousScores = new JButton();
         JButton exitButton = new JButton();
 
-        //   startButton.addActionListener(StartScreenListener);
+        // startButton.addActionListener(StartScreenListener);
         // exitButton.addActionListener(StartScreenListener);
 
 
