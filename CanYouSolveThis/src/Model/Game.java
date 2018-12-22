@@ -8,13 +8,13 @@ public class Game {
     private int currentQuestionIndex;
     private Timer timer; //instantiate
     Scanner scanner = new Scanner(System.in);
-
+    private static final String SCORES = "CanYouSolveThis/SCORES";
     FileReader fileReader = new FileReader(SCORES);
     FileWriter fileWriter = new FileWriter(SCORES);
     BufferedReader reader = new BufferedReader(fileReader);
     BufferedWriter writer = new BufferedWriter(fileWriter);
+    private boolean hasJoker = true;
 
-    private static final String SCORES = "src/SCORES.txt";
 
     private QuestionArchive questionArchive;
     private String[][] questions;
@@ -67,7 +67,7 @@ public class Game {
     }
 
     private void showQuestion() throws IOException {
-        int currentQuestion = 0;
+        currentQuestion = 0;
         for (int i = 0; i < 10; i++) {
             currentQuestion++;
             for (int j = 0; j < 5; j++) {
@@ -75,8 +75,12 @@ public class Game {
             }
             System.out.println("Your answer: ");
             int input = scanner.nextInt();
-            if (input != 1)
+            if (input != 1 && !(input == 5 && hasJoker)) {
                 endGame();
+                showIdleScreen();
+            }
+            else if (input == 5 && hasJoker)
+                hasJoker = false;
         }
     }
 
@@ -88,6 +92,7 @@ public class Game {
         }
         else
             showFinalScore();
+            viewPreviousScores();
 
         //ask rebound if question 6...
         //showFinalScore();
@@ -118,8 +123,12 @@ public class Game {
             }
             System.out.println("Your answer: ");
             int input = scanner.nextInt();
-            if (input != 1)
+            if (input != 1 && !(input == 5 && hasJoker)) {
                 endGame();
+                showIdleScreen();
+            }
+            else if (input == 5 && hasJoker)
+                hasJoker = false;
         }
     }
 
