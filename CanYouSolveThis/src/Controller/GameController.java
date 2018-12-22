@@ -8,7 +8,6 @@ public class GameController {
     private Game model;
     private GameView view;
 
-
     public GameController(Game model) {
         this.model = model;
 
@@ -16,6 +15,6 @@ public class GameController {
 
     public void setView(GameView view) { this.view = view; }
 
+    }
 
 
-}
