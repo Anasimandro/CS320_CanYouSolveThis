@@ -26,6 +26,7 @@ public class Game {
         else if(input == 2)
             System.exit(1);
         else
+            System.out.println("Please enter either 1 or 2");
             showIdleScreen();
 
 
@@ -64,6 +65,15 @@ public class Game {
     private int calculateScore() {
         //TODO
         //calculation algorithm
+
+        if(currentQuestionIndex == 0)
+            return 0;
+        else if (currentQuestionIndex <= 3)
+            return currentQuestionIndex * 125;
+        else if(currentQuestionIndex <= 6)
+            return 500 + (currentQuestionIndex - 3 ) * 200;
+
+
         return 0;
     }
 
