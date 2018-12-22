@@ -1,6 +1,8 @@
 
 import javax.swing.*;
 
+import Controller.GameController;
+import Model.Game;
 import View.*;
 
 import java.awt.*;
@@ -8,22 +10,14 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Can You Solve This");
-        frame.setSize(1200, 600);
-        frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        StatusBar startScreen = new StatusBar();
-        JPanel startPanel = startScreen.getPanel();
-
-        frame.add(startPanel);
-
-        startPanel.setVisible(true);
-        frame.setVisible(true);
+       startGame();
 
     }
 
-    private void startNewGame() {
-        //TODO
+    public static void startGame() {
+        Game model = new Game();
+        GameController controller = new GameController(model);
+        GameView view = new GameView(model, controller);
     }
 }
