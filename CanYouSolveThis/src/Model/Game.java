@@ -2,27 +2,26 @@ package Model;
 
 import java.io.*;
 import java.util.*;
-import java.awt.event.*;
 
 public class Game {
 
     private int currentQuestionIndex;
     private Timer timer; //instantiate
     Scanner scanner = new Scanner(System.in);
-    static final String SCORES = "D:\\workspace\\CS320_CanYouSolveThis\\CS320_CanYouSolveThis\\CanYouSolveThis\\SCORES";
+    static final String SCORES = "C:\\ata.baykara\\CST\\CS320_CanYouSolveThis\\CanYouSolveThis\\src\\SCORES";
     FileReader fileReader = new FileReader(SCORES);
     FileWriter fileWriter = new FileWriter(SCORES, true);
     BufferedReader reader = new BufferedReader(fileReader);
     BufferedWriter writer = new BufferedWriter(fileWriter);
 
-    private boolean joker = true;
+    private boolean hasJoker = true;
+
 
     private QuestionArchive questionArchive;
     private String[][] questions;
-    private int currentQuestion = 0;
+    private int currentQuestion;
     private boolean reboundUsed = false;
     private int score = 0;
-    private boolean testFinished = false;
 
     public Game() throws IOException {
 
@@ -73,34 +72,30 @@ public class Game {
     private void showQuestion() throws IOException {
         currentQuestion = 0;
         for (int i = 0; i < 10; i++) {
-            currentQuestion = i;
+            currentQuestion++;
             for (int j = 0; j < 5; j++) {
                 System.out.println(questions[i][j]);
             }
             System.out.println("Your answer: ");
             int input = scanner.nextInt();
-            if (input != 1 && !(input == 5 && joker)) {
+            if (input != 1 && !(input == 5 && hasJoker)) {
                 endGame();
                 showIdleScreen();
             }
-            else if (input == 5 && joker)
-                joker = false;
-
-            calculateScore();
+            else if (input == 5 && hasJoker)
+                hasJoker = false;
         }
-        testFinished = true;
-        endGame();
     }
 
     private void endGame() throws IOException {
         //TODO
-        if(currentQuestion > 5 && reboundUsed == false && testFinished == false) {
+        if(currentQuestion > 5 && reboundUsed == false) {
             reboundUsed = true;
             rebound();
         }
         else
             showFinalScore();
-        viewPreviousScores();
+            viewPreviousScores();
 
         //ask rebound if question 6...
         //showFinalScore();
@@ -109,50 +104,39 @@ public class Game {
     private void showFinalScore() throws IOException {
         //TODO
         //System.out.println("Your Score: " + calculateScore());
-
-        writer.append(score + "\n");
-        writer.close();
-        System.out.println("Your Score: " + score );
+        writer.append("YENİ CALCULATE EDİLEN SCORE\n");
+        System.out.println("Your Score: 1 " );
     }
 
     private void calculateScore() {
-        if(currentQuestion == 0 || currentQuestion == 1 || currentQuestion == 2 || currentQuestion == 3) {
+        if(currentQuestion == 1 || currentQuestion == 2 || currentQuestion == 3 || currentQuestion == 4) {
             score += 100;
-        } else if (currentQuestion == 4 || currentQuestion == 5 || currentQuestion == 6) {
+        } else if (currentQuestion == 5 || currentQuestion == 6 || currentQuestion == 7) {
             score += 200;
         } else {
             score += 300;
         }
     }
 
+    private void useJoker() {
+
+    }
 
     private void rebound() throws IOException {
-        System.out.println("1 to rebound, 2 to exit");
-        int reboundChoice = scanner.nextInt();
-        if (reboundChoice == 1) {
-            int reboundedQuestionIndex = currentQuestion;
-            for (int i= reboundedQuestionIndex; i < 10; i++) {
-                currentQuestion = i;
-                for (int j = 0; j < 5; j++) {
-                    System.out.println(questions[i][j]);
-                }
-                System.out.println("Your answer: ");
-                int input = scanner.nextInt();
-                if (input != 1 && !(input == 5 && joker)) {
-                    endGame();
-                    showIdleScreen();
-                } else if (input == 5 && joker)
-                    joker = false;
-
-                calculateScore();
+        for (int i= currentQuestion; i < 10; i++) {
+            currentQuestion++;
+            for (int j = 0; j < 5; j++) {
+                System.out.println(questions[i][j]);
             }
+            System.out.println("Your answer: ");
+            int input = scanner.nextInt();
+            if (input != 1 && !(input == 5 && hasJoker)) {
+                endGame();
+                showIdleScreen();
+            }
+            else if (input == 5 && hasJoker)
+                hasJoker = false;
         }
-        else if (reboundChoice == 2)
-            System.exit(1);
-
-        testFinished = true;
-        endGame();
-
     }
 
     private void viewPreviousScores() throws IOException {
@@ -168,6 +152,23 @@ public class Game {
         System.out.println(reader.readLine());
     }
 
+    public String[] getPreviousScores() throws IOException {
+        String[] prevScores = new String[10];
+        prevScores[0] = reader.readLine();
+        prevScores[1] = reader.readLine();
+        prevScores[2] = reader.readLine();
+        prevScores[3] = reader.readLine();
+        prevScores[4] = reader.readLine();
+        prevScores[5] = reader.readLine();
+        prevScores[6] = reader.readLine();
+        prevScores[7] = reader.readLine();
+        prevScores[8] = reader.readLine();
+        prevScores[9] = reader.readLine();
+
+        return prevScores;
+
+    }
+
     public boolean checkAnswer (String answer) {
         String rightAnswer = questions[currentQuestion][1];
         return rightAnswer.equals(answer);
@@ -175,20 +176,7 @@ public class Game {
     }
 
     public String[] getCurrentQuestion () {
-
         return questions[currentQuestion];
-    }
-
-    public int getCurrentScore () {
-        return score;
-    }
-
-    public int getCurrentQuestionIndex () {
-        return currentQuestion;
-    }
-
-    public boolean hasJoker() {
-        return joker;
     }
 
 
