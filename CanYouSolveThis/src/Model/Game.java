@@ -8,13 +8,13 @@ public class Game {
     private int currentQuestionIndex;
     private Timer timer; //instantiate
     Scanner scanner = new Scanner(System.in);
-    static final String SCORES = "C:\\ata.baykara\\CST\\CS320_CanYouSolveThis\\CanYouSolveThis\\src\\SCORES";
+    static final String SCORES = "D:\\workspace\\CanYouSolveThis_Yalan_Soyledim_Son_Bu\\CS320_CanYouSolveThis\\CanYouSolveThis\\src\\SCORES";
     FileReader fileReader = new FileReader(SCORES);
     FileWriter fileWriter = new FileWriter(SCORES, true);
     BufferedReader reader = new BufferedReader(fileReader);
     BufferedWriter writer = new BufferedWriter(fileWriter);
 
-    private boolean hasJoker = true;
+    private boolean joker = true;
 
 
     private QuestionArchive questionArchive;
@@ -78,12 +78,12 @@ public class Game {
             }
             System.out.println("Your answer: ");
             int input = scanner.nextInt();
-            if (input != 1 && !(input == 5 && hasJoker)) {
+            if (input != 1 && !(input == 5 && joker)) {
                 endGame();
                 showIdleScreen();
             }
-            else if (input == 5 && hasJoker)
-                hasJoker = false;
+            else if (input == 5 && joker)
+                joker = false;
         }
     }
 
@@ -130,12 +130,12 @@ public class Game {
             }
             System.out.println("Your answer: ");
             int input = scanner.nextInt();
-            if (input != 1 && !(input == 5 && hasJoker)) {
+            if (input != 1 && !(input == 5 && joker)) {
                 endGame();
                 showIdleScreen();
             }
-            else if (input == 5 && hasJoker)
-                hasJoker = false;
+            else if (input == 5 && joker)
+                joker = false;
         }
     }
 
@@ -176,9 +176,20 @@ public class Game {
     }
 
     public String[] getCurrentQuestion () {
+
         return questions[currentQuestion];
     }
 
+    public int getCurrentScore () {
+        return score;
+    }
 
+    public int getCurrentQuestionIndex () {
+        return currentQuestion;
+    }
+
+    public boolean hasJoker() {
+        return joker;
+    }
 
 }
