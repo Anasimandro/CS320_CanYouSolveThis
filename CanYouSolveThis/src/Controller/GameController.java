@@ -2,7 +2,6 @@ package Controller;
 
 import Model.Game;
 import View.*;
-import org.omg.CORBA.Object;
 
 import javax.swing.*;
 import java.awt.*;
