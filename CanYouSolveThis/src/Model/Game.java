@@ -8,7 +8,7 @@ public class Game {
     private int currentQuestionIndex;
     private Timer timer; //instantiate
     Scanner scanner = new Scanner(System.in);
-    static final String SCORES = "D:\\workspace\\CS320_CanYouSolveThis\\CS320_CanYouSolveThis\\CanYouSolveThis\\SCORES";
+    static final String SCORES = "/Users/eylulbasakdayi/IdeaProjects/CS320_CanYouSolveThis/CanYouSolveThis/SCORES";
     FileReader fileReader = new FileReader(SCORES);
     FileWriter fileWriter = new FileWriter(SCORES, true);
     BufferedReader reader = new BufferedReader(fileReader);
@@ -105,7 +105,6 @@ public class Game {
         //TODO
         //System.out.println("Your Score: " + calculateScore());
         writer.append("YENİ CALCULATE EDİLEN SCORE\n");
-        writer.close();
         System.out.println("Your Score: 1 " );
     }
 
@@ -153,6 +152,23 @@ public class Game {
         System.out.println(reader.readLine());
     }
 
+    private String[] getPreviousScores() throws IOException {
+        String[] prevScores = new String[10];
+        prevScores[0] = reader.readLine();
+        prevScores[1] = reader.readLine();
+        prevScores[2] = reader.readLine();
+        prevScores[3] = reader.readLine();
+        prevScores[4] = reader.readLine();
+        prevScores[5] = reader.readLine();
+        prevScores[6] = reader.readLine();
+        prevScores[7] = reader.readLine();
+        prevScores[8] = reader.readLine();
+        prevScores[9] = reader.readLine();
+
+        return prevScores;
+
+    }
+
     public boolean checkAnswer (String answer) {
         String rightAnswer = questions[currentQuestion][1];
         return rightAnswer.equals(answer);
@@ -162,5 +178,7 @@ public class Game {
     public String[] getCurrentQuestion () {
         return questions[currentQuestion];
     }
+
+
 
 }
