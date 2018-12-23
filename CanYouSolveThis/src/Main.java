@@ -27,7 +27,6 @@ public class Main {
 
             GameController controller = new GameController(model);
             GameView view = new GameView(model, controller);
-            model.play();
         } catch (IOException e) { e.printStackTrace(); }
 
 

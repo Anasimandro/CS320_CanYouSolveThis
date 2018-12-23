@@ -16,7 +16,7 @@ public class GamePanel extends JPanel {
     private JPanel gamePanel;
     private GameController controller;
     // TODO private String[] answers = {controller.getCurrentAns1(), controller.getCurrentAns2(), controller.getCurrentAns3(), controller.getCurrentAns4()};
-    private String[] answers = {"xd","xdz","darlanboi","Jemboi"};
+    private String[] answers = {"PEMPE","Göt Yeşili","Bok Grisi","Hatırlamıyorum"};
 
     public GamePanel(String category) {
 
@@ -36,31 +36,44 @@ public class GamePanel extends JPanel {
         JPanel jokersPanel = new JPanel();
         JPanel scorePanel = new JPanel();
 
-
         //Implementation of the GamePanel
         questionPanel.setLayout(new BorderLayout());
         JPanel answerPanel = new JPanel();
         answerPanel.setLayout(new GridLayout(2,2));
 
+        JPanel ansP1 = new JPanel();
         JButton ans1 = new JButton();
+        ans1.setPreferredSize(new Dimension(300,200));
         ans1.setText(answers[0]);
-        answerPanel.add(ans1);
+        ansP1.add(ans1);
+        answerPanel.add(ansP1);
 
+        JPanel ansP2 = new JPanel();
         JButton ans2 = new JButton();
+        ans2.setPreferredSize(new Dimension(300,200));
         ans2.setText(answers[1]);
-        answerPanel.add(ans2);
+        ansP2.add(ans2);
+        answerPanel.add(ansP2);
 
+        JPanel ansP3 = new JPanel();
         JButton ans3 = new JButton();
+        ans3.setPreferredSize(new Dimension(300,200));
         ans3.setText(answers[2]);
-        answerPanel.add(ans3);
+        ansP3.add(ans3);
+        answerPanel.add(ansP3);
 
+        JPanel ansP4 = new JPanel();
         JButton ans4 = new JButton();
+        ans4.setPreferredSize(new Dimension(300,200));
         ans4.setText(answers[3]);
-        answerPanel.add(ans4);
+        ansP4.add(ans4);
+        answerPanel.add(ansP4);
 
         JLabel question = new JLabel();
         // TODO question.setText(controller.getCurrentQuestion());
-        question.setText("DENEME?");
+        question.setText("Ebenizin amı ne renkti?");
+        question.setHorizontalAlignment(JLabel.CENTER);
+        question.setFont(new Font("Serif", Font.PLAIN, 75));
 
 
         questionPanel.add(question, BorderLayout.NORTH);
