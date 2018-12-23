@@ -66,7 +66,6 @@ public class GameView implements Observer {
         startButton.setFont(new Font("Arial", Font.PLAIN, 30));
         startButton.setPreferredSize(new Dimension(400, 80));
         startButton.addActionListener(e -> {
-            System.out.println("1");
             gameFrame.remove(startScreenPanel);
             gameFrame.repaint();
             gameFrame.revalidate();
