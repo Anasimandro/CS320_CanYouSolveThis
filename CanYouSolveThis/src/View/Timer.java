@@ -6,28 +6,34 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Timer extends javax.swing.Timer{
-    private JPanel panel;
     private JLabel timeLabel;
-    private int secondsRemaining; //Time to answer questions.
+    private int initialTime; //Time to answer questions.
+    private int counter; //timeListener
 
-    public Timer(int delay, ClockListener cl){
-        super(delay, cl);
-        panel = new JPanel();
+    public Timer(int delay, TimeListener timeListener){
+        super(delay, timeListener);
+        this.initialTime = 600;
+        super.start();
+        JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
-
-        this.secondsRemaining = 600;
 
         timeLabel = new JLabel();
 
         panel.add(timeLabel, BorderLayout.CENTER);
-
     }
-    private class ClockListener implements ActionListener {
+    private class TimeListener implements ActionListener {
+        int secondsRemaining;
 
         public void actionPerformed(ActionEvent e) {
+            secondsRemaining = initialTime-counter;
+            timeLabel.setText("Time remaining : " + secondsRemaining + "seconds");
 
-            timeLabel.setText(String.valueOf(secondsRemaining));
-            secondsRemaining--;
+            if (OutOfTime()) {
+                Timer.super.stop();
+            }
+        }
+        private boolean OutOfTime(){
+            return (++counter > initialTime);
         }
     }
 }
