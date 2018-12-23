@@ -117,28 +117,28 @@ public class GameView implements Observer {
         celebrities.setText("Celebrities");
         celebrities.setFont(new Font("Arial", Font.PLAIN, 20));
         celebrities.setPreferredSize(new Dimension(300, 50));
-        celebrities.setBackground(Color.getHSBColor(0,50,100));
+        celebrities.setBackground(Color.RED);
 
         movies.setText("Movies");
         movies.setFont(new Font("Arial", Font.PLAIN, 20));
         movies.setPreferredSize(new Dimension(300, 50));
-        movies.setBackground(Color.getHSBColor(180,50,100));
+        movies.setBackground(Color.CYAN);
 
         history.setText("History");
         history.setFont(new Font("Arial", Font.PLAIN, 20));
         history.setPreferredSize(new Dimension(300, 50));
-        history.setBackground(Color.getHSBColor(120,33,90));
+        history.setBackground(Color.GREEN);
 
 
         music.setText("Music");
         music.setFont(new Font("Arial", Font.PLAIN, 20));
         music.setPreferredSize(new Dimension(300, 50));
-        music.setBackground(Color.getHSBColor(60,50,100));
+        music.setBackground(Color.YELLOW);
 
         food.setText("Food");
         food.setFont(new Font("Arial", Font.PLAIN, 20));
         food.setPreferredSize(new Dimension(300, 50));
-        food.setBackground(Color.getHSBColor(24,50,100));
+        food.setBackground(Color.ORANGE);
 
 
         categorySelectionPanel.add(label);
