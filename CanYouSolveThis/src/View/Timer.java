@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Timer extends javax.swing.Timer{
+    private JPanel panel;
     private JLabel timeLabel;
     private int initialTime; //Time to answer questions.
     private int counter; //timeListener
@@ -14,13 +15,18 @@ public class Timer extends javax.swing.Timer{
         super(delay, timeListener);
         this.initialTime = 600;
         super.start();
-        JPanel panel = new JPanel();
+        panel = new JPanel();
         panel.setLayout(new BorderLayout());
 
         timeLabel = new JLabel();
 
         panel.add(timeLabel, BorderLayout.CENTER);
     }
+
+    public JPanel getPanel() {
+        return panel;
+    }
+
     private class TimeListener implements ActionListener {
         int secondsRemaining;
 
