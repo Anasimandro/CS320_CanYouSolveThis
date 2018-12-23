@@ -2,13 +2,11 @@ package View;
 
 import Controller.*;
 import Model.*;
-import com.sun.scenario.effect.impl.sw.java.JSWBlend_COLOR_BURNPeer;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
+import java.io.IOException;
 import java.util.Observer;
 
 public class GameView implements Observer {
@@ -21,6 +19,7 @@ public class GameView implements Observer {
     // TODO private GamePanel gamePanel;
     private JPanel startScreenPanel;
     private JPanel categorySelectionPanel;
+    private JPanel previousScoresScreenPanel;
 
 
     public GameView(Game model, GameController controller) {
@@ -66,13 +65,28 @@ public class GameView implements Observer {
         startButton.setText("Start");
         startButton.setFont(new Font("Arial", Font.PLAIN, 30));
         startButton.setPreferredSize(new Dimension(400, 80));
-        startButton.addActionListener((ActionEvent e) -> createCategorySelectionScreen()); // TODO on controller
+        startButton.addActionListener(e -> {
+            System.out.println("1");
+            gameFrame.remove(startScreenPanel);
+            gameFrame.repaint();
+            gameFrame.revalidate();
+            createCategorySelectionScreen();
+        }); // TODO on controller
 
         JPanel previousScoresPanel = new JPanel();
         previousScores.setText("Previous Scores");
         previousScores.setFont(new Font("Arial", Font.PLAIN, 30));
         previousScores.setPreferredSize(new Dimension(400, 80));
-        // TODO actionListener -> createPreviousScoresPanel();
+        previousScores.addActionListener(e -> {
+            gameFrame.remove(startScreenPanel);
+            gameFrame.repaint();
+            gameFrame.revalidate();
+            try {
+                createPreviousScoresScreen();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        });
 
         JPanel exitButtonPanel = new JPanel();
         exitButton.setText("Exit");
@@ -90,6 +104,10 @@ public class GameView implements Observer {
 
         exitButtonPanel.add(exitButton);
         startScreenPanel.add(exitButtonPanel);
+
+        gameFrame.add(startScreenPanel);
+        gameFrame.repaint();
+        gameFrame.revalidate();
 
     }
 
@@ -118,6 +136,14 @@ public class GameView implements Observer {
         celebrities.setFont(new Font("Arial", Font.PLAIN, 20));
         celebrities.setPreferredSize(new Dimension(300, 50));
         celebrities.setBackground(Color.RED);
+        celebrities.addActionListener((ActionEvent e) -> {
+
+            gameFrame.remove(categorySelectionPanel);
+            GamePanel celebritiesGame = new GamePanel("Celebrities");
+            gameFrame.add(celebritiesGame.getGamePanel());
+            gameFrame.repaint();
+            gameFrame.revalidate();
+        });
 
         movies.setText("Movies");
         movies.setFont(new Font("Arial", Font.PLAIN, 20));
@@ -153,9 +179,52 @@ public class GameView implements Observer {
         foodPanel.add(food);
         categorySelectionPanel.add(foodPanel);
 
-        gameFrame.remove(startScreenPanel);
         gameFrame.add(categorySelectionPanel);
 
+        gameFrame.repaint();
+        gameFrame.revalidate();
+    }
+
+    public void createPreviousScoresScreen() throws IOException {
+
+        previousScoresScreenPanel = new JPanel();
+        previousScoresScreenPanel.setLayout(new GridLayout(12,1));
+
+        JLabel[] scoreLabels = new JLabel[10];
+        String[] previousS = controller.givePreviousScores();
+        JLabel previousScoresTitle = new JLabel();
+        previousScoresTitle.setText("Previous Scores");
+        previousScoresTitle.setHorizontalAlignment(JLabel.CENTER);
+        previousScoresTitle.setSize(600, 60);
+        previousScoresTitle.setFont(new Font("Serif", Font.PLAIN, 50));
+
+        previousScoresScreenPanel.add(previousScoresTitle);
+
+        for(int i = 0; i < previousS.length ; i++) {
+            scoreLabels[i] = new JLabel();
+            scoreLabels[i].setHorizontalAlignment(JLabel.CENTER);
+            scoreLabels[i].setText(previousS[i]);
+            scoreLabels[i].setFont(new Font("Serif", Font.PLAIN, 30));
+            previousScoresScreenPanel.add(scoreLabels[i]);
+        }
+
+        JPanel goBackButtonPanel = new JPanel();
+
+        JButton goBackButton = new JButton();
+        goBackButton.setText("Go Back");
+        goBackButton.setFont(new Font("Arial", Font.PLAIN, 20));
+        goBackButton.setBackground(Color.CYAN);
+        goBackButton.addActionListener(e -> {
+            gameFrame.remove(previousScoresScreenPanel);
+            gameFrame.repaint();
+            gameFrame.revalidate();
+            createStartScreenPanel();
+        });
+
+        goBackButtonPanel.add(goBackButton);
+        previousScoresScreenPanel.add(goBackButtonPanel);
+
+        gameFrame.add(previousScoresScreenPanel);
         gameFrame.repaint();
         gameFrame.revalidate();
     }
