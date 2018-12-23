@@ -8,24 +8,26 @@ import java.awt.event.ActionListener;
 public class Timer extends javax.swing.Timer{
     private JPanel panel;
     private JLabel timeLabel;
-    int N = 60;
-    public Timer(int time, ClockListener cl){
-        super(time, cl);
+    private int secondsRemaining; //Time to answer questions.
+
+    public Timer(int delay, ClockListener cl){
+        super(delay, cl);
         panel = new JPanel();
         panel.setLayout(new BorderLayout());
+
+        this.secondsRemaining = 600;
+
         timeLabel = new JLabel();
 
-        panel.add(timeLabel);
+        panel.add(timeLabel, BorderLayout.CENTER);
 
     }
     private class ClockListener implements ActionListener {
 
-        private int count;
-
         public void actionPerformed(ActionEvent e) {
-            count %= N;
-            timeLabel.setText(String.valueOf(count));
-            count++;
+
+            timeLabel.setText(String.valueOf(secondsRemaining));
+            secondsRemaining--;
         }
     }
 }
