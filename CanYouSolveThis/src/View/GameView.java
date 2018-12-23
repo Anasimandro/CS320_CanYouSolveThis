@@ -20,7 +20,7 @@ public class GameView implements Observer {
     private JPanel startScreenPanel;
     private JPanel categorySelectionPanel;
     private JPanel previousScoresScreenPanel;
-
+    private JPanel endScreenWithScorePanel;
 
     public GameView(Game model, GameController controller) {
         this.model = model;
@@ -226,6 +226,46 @@ public class GameView implements Observer {
         gameFrame.add(previousScoresScreenPanel);
         gameFrame.repaint();
         gameFrame.revalidate();
+    }
+
+    public void createEndScreenWithScores() throws IOException {
+        endScreenWithScorePanel = new JPanel();
+        endScreenWithScorePanel.setLayout(new GridLayout(15,1));
+
+        JLabel gameOverLabel = new JLabel("Game Over");
+        JLabel pointsLabel = new JLabel("Current Scores: ");
+        endScreenWithScorePanel.add(gameOverLabel);
+        endScreenWithScorePanel.add(pointsLabel);
+
+        JLabel[] scoreLabels = new JLabel[10];
+        String[] previousS = controller.givePreviousScores();
+        JLabel previousScoresTitle = new JLabel();
+        previousScoresTitle.setText("Previous Scores");
+        previousScoresTitle.setHorizontalAlignment(JLabel.CENTER);
+        previousScoresTitle.setSize(600, 60);
+        previousScoresTitle.setFont(new Font("Serif", Font.PLAIN, 50));
+
+        endScreenWithScorePanel.add(previousScoresTitle);
+
+        for(int i = 0; i < previousS.length ; i++) {
+            scoreLabels[i] = new JLabel();
+            scoreLabels[i].setHorizontalAlignment(JLabel.CENTER);
+            scoreLabels[i].setText(previousS[i]);
+            scoreLabels[i].setFont(new Font("Serif", Font.PLAIN, 30));
+            endScreenWithScorePanel.add(scoreLabels[i]);
+        }
+
+        JButton newGameButton = new JButton();
+        JButton exitButton = new JButton();
+        newGameButton.addActionListener((ActionEvent e) -> {
+            gameFrame.remove(endScreenWithScorePanel);
+            gameFrame.repaint();
+            gameFrame.revalidate();
+            createStartScreenPanel();
+        });
+        exitButton.addActionListener((ActionEvent e) -> gameFrame.dispatchEvent(new WindowEvent(gameFrame, WindowEvent.WINDOW_CLOSING)));
+        endScreenWithScorePanel.add(newGameButton);
+        endScreenWithScorePanel.add(exitButton);
     }
 
     public void update(java.util.Observable o, Object arg) {
